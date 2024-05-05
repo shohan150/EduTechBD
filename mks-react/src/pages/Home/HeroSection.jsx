@@ -1,64 +1,11 @@
+import HeroSlider from "./HeroSlider";
+
 export default function HeroSection() {
   return (
     <div className="container-xxl mb-5">
       <div className="row py-4">
         <div className="col-md-8">
-          <div className="owl-carousel header-carousel position-relative ">
-            <div className="owl-carousel-item position-relative">
-              <img
-                className="img-fluid rounded-3"
-                src="../../assets/img/course-2.jpg"
-                alt=""
-              />
-              <div
-                className="position-absolute top-0  rounded-3 start-0 w-100 h-100 d-flex align-items-center"
-                style={{ background: "rgba(24, 29, 56, 0.1)" }}
-              >
-                <div className="container">
-                  <div className="row justify-content-start">
-                    <div className="col-sm-10 col-lg-8">
-                      <h5 className="text-primary text-uppercase mb-3 animated slideInDown">
-                        banner sub heading
-                      </h5>
-
-                      <h1 className="display-4 text-white animated slideInDown">
-                        banner display heading
-                      </h1>
-
-                      <p className="fs-5 text-white mb-4 pb-2">banner text</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="owl-carousel-item position-relative">
-              <img
-                className="img-fluid rounded-3"
-                src="../../assets/img/course-2.jpg"
-                alt=""
-              />
-              <div
-                className="position-absolute top-0  rounded-3 start-0 w-100 h-100 d-flex align-items-center"
-                style={{ background: "rgba(24, 29, 56, 0.1)" }}
-              >
-                <div className="container">
-                  <div className="row justify-content-start">
-                    <div className="col-sm-10 col-lg-8">
-                      <h5 className="text-primary text-uppercase mb-3 animated slideInDown">
-                        banner sub heading
-                      </h5>
-
-                      <h1 className="display-4 text-white animated slideInDown">
-                        banner display heading
-                      </h1>
-
-                      <p className="fs-5 text-white mb-4 pb-2">banner text</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeroSlider />
         </div>
         <div className="col-md-4 pt-5 pt-md-0">
           <div className="vendor-info">
