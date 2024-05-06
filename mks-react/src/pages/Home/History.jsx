@@ -4,7 +4,7 @@ export default function History() {
     <div className="container-xxl  py-5">
       <div className="row px-4 g-5">
         <div
-          className="col-lg-5 wow fadeInUp"
+          className="col-lg-5 animate__animated animate__fadeInUp"
           data-wow-delay="0.1s"
           style={{ minHeight: "400px" }}
         >
@@ -24,7 +24,10 @@ export default function History() {
             />
           </div>
         </div>
-        <div className="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
+        <div
+          className="col-lg-7 animate__animated animate__fadeInUp"
+          data-wow-delay="0.3s"
+        >
           <h6 className="section-title bg-white text-start text-primary pe-3">
             school history heading
           </h6>

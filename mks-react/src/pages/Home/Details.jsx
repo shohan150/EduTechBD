@@ -7,7 +7,7 @@ export default function Details() {
         <div className="col-lg-7 col-md-6">
           <div className="row g-3">
             <div
-              className="col-lg-6 col-md-12 wow zoomIn"
+              className="col-lg-6 col-md-12 animate__animated animate__zoomIn"
               data-wow-delay="0.3s"
             >
               <h4
@@ -36,7 +36,7 @@ export default function Details() {
               </div>
             </div>
             <div
-              className="col-lg-6 col-md-12 wow zoomIn"
+              className="col-lg-6 col-md-12 animate__animated animate__zoomIn"
               data-wow-delay="0.5s"
             >
               <h4
@@ -65,7 +65,7 @@ export default function Details() {
               </div>
             </div>
             <div
-              className="col-lg-6 col-md-12 wow zoomIn"
+              className="col-lg-6 col-md-12 animate__animated animate__zoomIn"
               data-wow-delay="0.3s"
             >
               <h4
@@ -94,7 +94,7 @@ export default function Details() {
               </div>
             </div>
             <div
-              className="col-lg-6 col-md-12 wow zoomIn"
+              className="col-lg-6 col-md-12 animate__animated animate__zoomIn"
               data-wow-delay="0.5s"
             >
               <h4
@@ -125,7 +125,7 @@ export default function Details() {
           </div>
         </div>
         <div
-          className="col-lg-5 col-md-6 wow zoomIn"
+          className="col-lg-5 col-md-6 animate__animated animate__zoomIn"
           data-wow-delay="0.7s"
           style={{ minHeight: "350px" }}
         >

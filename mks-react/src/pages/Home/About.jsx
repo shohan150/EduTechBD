@@ -4,7 +4,7 @@ export default function About() {
     <div className="container-xxl  py-5">
       <div className="row  g-5">
         <div
-          className="col-lg-3 wow fadeInUp"
+          className="col-lg-3 animate__animated animate__fadeInUp"
           data-wow-delay="0.1s"
           style={{ minHeight: "400px" }}
         >
@@ -35,7 +35,10 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="col-lg-9 wow fadeInUp" data-wow-delay="0.3s">
+        <div
+          className="col-lg-9 animate__animated animate__fadeInUp"
+          data-wow-delay="0.3s"
+        >
           <h6 className="section-title bg-white text-start text-primary pe-3">
             heading
           </h6>
