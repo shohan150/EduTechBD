@@ -1,15 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Root from "../pages/Root/Root";
-import Home from "../pages/Home/Home";
-import Contact from "../pages/Contact/Contact";
 import NotFound from "../pages/404/NotFound";
 import About from "../pages/About/About";
 import ClassRoutine from "../pages/ClassRoutine/ClassRoutine";
+import Contact from "../pages/Contact/Contact";
+import Home from "../pages/Home/Home";
 import InstituteDetails from "../pages/InstituteDetails/InstituteDetails";
 import PictureGallery from "../pages/PictureGallery/PictureGallery";
+import Root from "../pages/Root/Root";
 import Staffs from "../pages/Staffs/Staffs";
+import StudentAttendance from "../pages/StudentAttendance/StudentAttendance";
+import StudentList from "../pages/StudentList/StudentList";
 import Teachers from "../pages/Teachers/Teachers";
 import TeachersRoutine from "../pages/TeachersRoutine/TeachersRoutine";
+import VideoGallery from "../pages/VideoGallery/VideoGallery";
 
 const Router = () => {
   return (
@@ -27,6 +30,9 @@ const Router = () => {
             <Route path="/staffs" element={<Staffs />} />
             <Route path="/teachers" element={<Teachers />} />
             <Route path="/teachers-routine" element={<TeachersRoutine />} />
+            <Route path="/student-attendance" element={<StudentAttendance />} />
+            <Route path="/student-list" element={<StudentList />} />
+            <Route path="/video-gallery" element={<VideoGallery />} />
           </Route>
         </Routes>
       </BrowserRouter>
