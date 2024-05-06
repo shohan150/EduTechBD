@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Skilled Instructors",
+    "description": "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    "iconClass": "fa-graduation-cap"
+  },
+
+  {
+    "title": "Online Classes",
+    "description": "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    "iconClass": "fa-globe"
+  },
+  {
+    "title": "Home Projects",
+    "description": "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    "iconClass": "fa-home"
+  },
+  {
+    "title": "Book Library",
+    "description": "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    "iconClass": "fa-book-open"
+  }
+]

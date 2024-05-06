@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Instructor Name",
+        "designation": "Designation",
+        "profile_picture": "team-1.jpg",
+        "facebook_url": "https://www.facebook.com",
+        "twitter_url": "https://twitter.com",
+        "instagram_url": "https://instagram.com"
+    },
+    {
+        "name": "Instructor Name",
+        "designation": "Designation",
+        "profile_picture": "team-2.jpg",
+        "facebook_url": "https://www.facebook.com",
+        "twitter_url": "https://twitter.com",
+        "instagram_url": "https://instagram.com"
+    },
+    {
+        "name": "Instructor Name",
+        "designation": "Designation",
+        "profile_picture": "team-3.jpg",
+        "facebook_url": "https://www.facebook.com",
+        "twitter_url": "https://twitter.com",
+        "instagram_url": "https://instagram.com"
+    },
+    {
+        "name": "Instructor Name",
+        "designation": "Designation",
+        "profile_picture": "team-4.jpg",
+        "facebook_url": "https://www.facebook.com",
+        "twitter_url": "https://twitter.com",
+        "instagram_url": "https://instagram.com"
+    }
+]

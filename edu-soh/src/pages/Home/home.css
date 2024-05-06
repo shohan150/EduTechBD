@@ -1,0 +1,86 @@
+.service-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Ensures the container takes the full height of the parent */
+}
+
+.padding-4 {
+  flex-grow: 1;
+  /* Allows the content to expand and take the available space */
+}
+
+.fixed-height-image {
+  height: 300px;
+  /* Set the desired fixed height */
+  object-fit: cover;
+  /* Preserve aspect ratio and cover the container */
+  width: 100%;
+  /* Ensure the image takes up the full width of the container */
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  /* Set a fixed height for all divs */
+}
+
+.testimonial-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  /* Hide content overflow */
+}
+
+/* Optionally, add styles for better visual appearance */
+.testimonial-item {
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.testimonial-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-card {
+  position: absolute;
+  left: 35%;
+  top: -20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-card:hover {
+  color: white !important;
+  background-color: #ffc107;
+}
+
+img.framed {
+  box-shadow: -50px -50px 0 -40px #fed86b, 50px 50px 0 -40px #fed86b;
+}
+
+img.schoolframed {
+  --s: 10px;
+  /* control the size */
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+.slider-btn-hover {
+  padding: 5px 11px;
+  z-index: 2;
+  border: 1px solid white;
+  cursor: "pointer";
+}
+
+.slider-btn-hover:hover {
+  background-color: #06bbcc;
+  border: none;
+  transition-duration: 0.6s;
+}
