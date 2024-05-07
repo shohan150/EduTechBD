@@ -4,7 +4,7 @@ import Home from "./components/pages/Home";
 
 export default function App() {
   return (
-    <div className="md:px-6 lg:px-10 xl:px-16 px-4">
+    <div className="font-poppins">
       <Header />
       <Home />
       <Footer />

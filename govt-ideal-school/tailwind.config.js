@@ -5,8 +5,13 @@ export default {
     colors: {
       primary: "#A90047",
       secondary: "#8B1446",
+      white: "#ffffff",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['"poppins"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
