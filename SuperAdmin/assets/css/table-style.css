@@ -1,0 +1,180 @@
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.input-fields h5 {
+  color: #131f73;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 10px;
+}
+
+.input-fields select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #1d1e4e0f
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="%23131f73" d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>')
+    right 1rem center/8px 10px no-repeat;
+  background-size: 10px;
+}
+
+.input-fields select:focus {
+  outline-color: #131e7395;
+}
+
+.overview {
+  font-size: 12px;
+  color: gray;
+  text-align: end;
+  margin-top: 20px;
+}
+.overview span {
+  color: #77df40;
+}
+
+.fees-info .table-content {
+  height: 200px;
+  display: block;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.fees-info .table-head {
+  background-color: #d2f2d4;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+  /* text-align: center; */
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.fees-info .table-head tr {
+  border: none;
+}
+
+.fees-info .table-head th {
+  padding: 10px;
+}
+.fees-info .table-head .name {
+  padding-left: 10px;
+}
+.fees-info table.table-head .status {
+  padding-right: 40px;
+}
+.fees-info table.table-content {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #d2f2d475;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 0 6px;
+}
+
+.fees-info .table-content tr {
+  border-bottom: 1px solid #69796a50;
+}
+
+.fees-info .table-content td {
+  padding: 5px;
+}
+
+.fees-info .table-content .payment-status {
+  color: white;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  width: 60px;
+  padding: 1px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.fees-info .payment-status.paid {
+  background-color: #77df40;
+}
+
+.fees-info .payment-status.unpaid {
+  background-color: #ff3e1d;
+}
+.payment-overview {
+  border: 1px solid #d2f2d4;
+  border-radius: 6px;
+}
+.payment-overview h4 {
+  text-align: center;
+  font-size: 16px;
+  color: #69796a;
+  background-color: #d2f2d4;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.graph-and-table {
+  display: flex;
+}
+.graph {
+  width: 30%;
+}
+.graph-and-table h3 {
+  color: #1d1e4e;
+  font-size: 16px;
+  text-align: center;
+}
+.payment-table {
+  width: 70%;
+  padding-right: 10px;
+}
+
+.payment-table .table-head {
+  background-color: #131f73;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  /* text-align: center; */
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  text-align: center;
+  width: 100%;
+}
+
+.payment-table .table-head tr {
+  border: none;
+}
+
+.payment-table .table-head th {
+  padding: 10px 2px;
+}
+
+.payment-table .overflow-2 {
+  height: 157px;
+  overflow-y: scroll;
+}
+
+.payment-table .table-content {
+  width: 100%;
+  background-color: #d2f2d475;
+  font-size: 14px;
+}
+
+.payment-table .table-content tr {
+  border-bottom: 1px solid #69796a50;
+}
+.payment-table .table-content td {
+  padding: 4px 10px;
+}
+
+.payment-table .table-content .paid {
+  color: #77df40;
+}
+.payment-table .table-content .unpaid {
+  color: #ff3e1d;
+}
