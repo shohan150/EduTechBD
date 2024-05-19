@@ -2,6 +2,7 @@ section {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
+  margin: 15px 0;
 }
 .input-fields h5 {
   color: #131f73;
@@ -64,9 +65,7 @@ section {
 .fees-info .table-head th {
   padding: 10px;
 }
-.fees-info .table-head .name {
-  padding-left: 10px;
-}
+
 .fees-info table.table-head .status {
   padding-right: 40px;
 }
@@ -177,4 +176,279 @@ section {
 }
 .payment-table .table-content .unpaid {
   color: #ff3e1d;
+}
+
+.submit-button-orange {
+  background-color: #ff3e1d;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 6px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.overview-large {
+  font-size: 16px;
+  color: gray;
+  text-align: end;
+  margin-top: 20px;
+}
+
+.overview-large span {
+  color: #ff3e1d;
+}
+
+.expense-info .table-head {
+  width: 100%;
+  background-color: #d2f2d4;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.expense-info .table-head tr {
+  border: none;
+}
+
+.expense-info .table-head th {
+  color: #131f73;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+}
+.expense-info .table-content {
+  width: 100%;
+  background-color: #d2f2d475;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.expense-info .table-content td {
+  color: #131f73;
+  font-size: 12px;
+  padding: 5px 10px;
+  font-weight: 400;
+}
+
+.expense-info .table-content tr {
+  border-bottom: 1px solid white;
+}
+
+.overflow-1 {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.fund-info .table-head {
+  width: 100%;
+  background-color: #d2f2d4;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.fund-info .table-head tr {
+  border: none;
+}
+
+.fund-info .table-head th {
+  color: #131f73;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+}
+.fund-info .table-content {
+  width: 100%;
+  background-color: #d2f2d475;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.fund-info .table-content td {
+  color: #131f73;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
+.fund-info .table-content tr {
+  border-bottom: 1px solid white;
+}
+
+.online-payslip form input[type="text"] {
+  width: 100%;
+  background-color: #69796a20;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+}
+
+.online-payslip form input[type="text"]:focus {
+  outline: none;
+}
+.online-payslip .table-head {
+  width: 100%;
+  background-color: #d2f2d4;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.online-payslip .table-head tr {
+  border: none;
+}
+
+.online-payslip .table-head th {
+  color: #131f73;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+}
+.online-payslip .table-content {
+  width: 100%;
+  background-color: #d2f2d475;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.online-payslip .table-content tr {
+  border-bottom: 1px solid white;
+}
+
+.online-payslip .table-content .title {
+  border-right: 1px solid white;
+  color: #131f73;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+
+.online-payslip .table-content .data {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.online-payslip .table-content #total-payable td {
+  color: #77df40;
+  font-weight: 600;
+}
+
+.online-payslip .payslip-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+.online-payslip .payslip-buttons .download {
+  color: white;
+  background-color: #77df40;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.online-payslip .payslip-buttons .pay {
+  background-color: #3f7afc;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 40px;
+  margin-left: 10px;
+}
+
+.class-routine input[type="date"] {
+  width: 100%;
+  background-color: #69796a20;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.class-routine .routine {
+  background-color: #e1f1ff;
+  border-radius: 6px;
+}
+
+.class-routine .routine .heading {
+  color: #131f73;
+  background-color: #1d1e4e30;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.class-routine .routines {
+  padding: 0 10px;
+  height: 356px;
+  overflow-y: auto;
+}
+
+.class-routine .routines .single-routine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 15px 10px;
+  margin-bottom: 6px;
+}
+.routines .single-routine .first,
+.routines .single-routine .second {
+  display: flex;
+  align-items: center;
+}
+.class-routine .routines .book-img {
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  padding: 7px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.class-routine .routines .book-img img {
+  width: 20px;
+  height: 20px;
+}
+
+.class-routine .routines .details h3 {
+  font-size: 16px;
+  color: #131f73;
+  font-weight: 500;
+  line-height: 10px;
+}
+.class-routine .routines .details h4 {
+  font-size: 12px;
+  color: #636363;
+  font-weight: 400;
+  line-height: 5px;
+  margin-bottom: 0;
+}
+
+.routines .single-routine .second .room {
+  font-size: 12px;
+  color: #6b6eff;
+  font-weight: 400;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #6b6eff;
+}
+
+.routines .single-routine .second .additional h4 {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+
+.routines .single-routine .second .additional h5 {
+  color: #ff3e1d;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 10px;
+  margin-bottom: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23131f73" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
 }

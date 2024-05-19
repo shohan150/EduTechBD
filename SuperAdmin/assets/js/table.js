@@ -10,3 +10,10 @@ paymentStatusSpans.forEach((span) => {
     span.classList.add("unpaid");
   }
 });
+
+const ps = new PerfectScrollbar(".routine", {
+  wheelSpeed: 2,
+  wheelPropagation: true,
+  minScrollbarLength: 20,
+});
+ps.update();

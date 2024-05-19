@@ -31,7 +31,13 @@
     <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" /> 
     <link rel="stylesheet" href="../assets/css/demo.css" /> 
 
+
+
     <link rel="stylesheet" href="../assets/css/table-style.css"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet">
+
+
 
     <!-- Page CSS -->
 
@@ -130,7 +136,7 @@
               <h4 class="py-3 mb-4"><span class="text-muted fw-light">Super Admin Dashboard</h4>
                 <p>Good Morning | Sat, 24 Mar 2023</p>
 
-              <!-- Basic Layout -->
+              <!-- Fees and payment stats section -->
               <div class="row gx-4">
 
              <!-- Fees info section -->
@@ -183,7 +189,7 @@
                     <div class="table">
                       <table class="table-head">
                         <tr>
-                          <td class="name" style="width:55%">Name</th>
+                          <th style="width:55%">Name</th>
                           <th style="width:20%">Class</th>
                           <th style="width:20%">Amount</th>
                           <th class="status" style="width:20%">Status</th>
@@ -192,49 +198,49 @@
                       <table class="table-content">
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">paid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">unpaid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">paid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">paid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">paid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">unpaid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">paid</span></td>
                           </tr>
                           <tr>
                             <td style="width:50%">Samsul Islam Khan</td>
-                            <td style="width:20%">Nursery - A</td>
+                            <td style="width:21%">Nursery - A</td>
                             <td style="width:20%">1234</td>
                             <td style="width:20%"><span class="payment-status">paid</span></td>
                           </tr>
@@ -369,6 +375,493 @@
                   </section>
                 </div>
 
+              </div>
+
+              <!-- Payslip and Class Routine section -->
+              <div class="row gx-4">
+
+             <!-- Payslip section  -->
+                <div class="col-md-6 col-12">
+                  <section class="online-payslip">
+                    <form>
+                     <!-- 3 select boxes -->
+                    <div class="input-fields row gx-4">
+                      <div class="col-8">
+                        <h5>Student ID</h5>
+                        <input type="text" placeholder="Type Student ID">
+                      </div>
+
+                      <div class="col-4">
+                        <button type="submit" class="submit-button-orange">Search</button>
+                      </div>
+                    </div>
+                    </form>
+                    <h6 class="overview">Total Payslip Found: <span>113</span></h6>
+                    <!-- show expense data -->
+                    <div class="table ">
+                      <table class="table-head">
+                        <tr>
+                          <th>Payslip ID: 123456789</th>
+                        </tr>
+                      </table>
+                      <div>
+                        <table class="table-content">
+                          <tr>
+                            <td class="title" style="width:30%">Student Name</td>
+                            <td class="data" style="width:70%">Al Amin Sawon</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Student ID</td>
+                            <td class="data" style="width:70%">123456789</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Student Class</td>
+                            <td class="data" style="width:70%">Class One</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Phone No</td>
+                            <td class="data" style="width:70%">01234567890</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Due Month</td>
+                            <td class="data" style="width:70%">April 2024</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Due Date</td>
+                            <td class="data" style="width:70%">12 May 2024</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Fine Start Date</td>
+                            <td class="data" style="width:70%"> 13 May 2024</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Total Due Amount</td>
+                            <td class="data" style="width:70%">4557</td>
+                          </tr>
+                          <tr>
+                            <td class="title" style="width:30%">Fine Amount</td>
+                            <td class="data" style="width:70%">0</td>
+                          </tr>
+                          <tr id="total-payable">
+                            <td class="title" style="width:30%">Total Payable</td>
+                            <td class="data" style="width:70%">4557</td>
+                          </tr>
+                      </table>
+                      </div>
+                    </div>
+
+                    <div class="payslip-buttons">
+                      <button class="download">
+                        <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                          <path fill-rule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clip-rule="evenodd"/>
+                          <path fill-rule="evenodd" d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clip-rule="evenodd"/>
+                        </svg>
+                        
+                      </button>
+                      <button class="pay">Pay Now</button>
+                    </div>
+                  </section>
+                </div>
+
+             <!-- Class routine section -->
+                <div class="col-md-6 col-12"> 
+                  <section class="class-routine">
+                    <form>
+                    <!-- 3 select boxes -->
+                    <div class="input-fields row gx-3">
+                      <div class="col-3">
+                        <h5>Date</h5>
+                        <input type="date" id="date" name="date">
+                      </div>
+                      <div class="col-3">
+                        <h5>Class</h5>
+                        <select id="class" name="class">
+                          <option value="" disabled selected>select class</option>
+                          <option value="Nursary">Nursary</option>
+                          <option value="class-one">Class One</option>
+                          <option value="class-two">Class Two</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <h5>Section</h5>
+                        <select id="section" name="section">
+                          <option value="" disabled selected>select section</option>
+                          <option value="A">A</option>
+                          <option value="B">B</option>
+                          <option value="C">C</option>
+                          <option value="D">D</option>
+                          
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <button type="submit" class="submit-button-orange">Search</button>
+                      </div>
+                    </div>
+                    </form>
+                    <h6 class="overview">Total Class Found: <span>06</span></h6>
+                    <!-- show class routine -->
+                    <div class="routine">
+                      <h3 class="heading">12 July 2024 | Class: Nine | Section: A</h3>
+                      <div class="routines">
+                        <div class="single-routine">
+                          <div class="first">
+                            <div class="book-img">
+                              <img src="../assets/img/book.png" alt="">
+                            </div>
+                            <div class="details">
+                              <h3>English 1st Paper</h3>
+                              <h4>Time: 10:00 am - 11:00 am</h4>
+                            </div>
+                          </div>
+                          <div class="second">
+                            <h5 class="room">Room: 301</h5>
+                            <div class="additional">
+                              <h4>Period: 1st Period</h4>
+                              <h5>Teacher: AKM</h5>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="single-routine">
+                          <div class="first">
+                            <div class="book-img">
+                              <img src="../assets/img/book.png" alt="">
+                            </div>
+                            <div class="details">
+                              <h3>English 1st Paper</h3>
+                              <h4>Time: 10:00 am - 11:00 am</h4>
+                            </div>
+                          </div>
+                          <div class="second">
+                            <h5 class="room">Room: 301</h5>
+                            <div class="additional">
+                              <h4>Period: 1st Period</h4>
+                              <h5>Teacher: AKM</h5>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="single-routine">
+                          <div class="first">
+                            <div class="book-img">
+                              <img src="../assets/img/book.png" alt="">
+                            </div>
+                            <div class="details">
+                              <h3>English 1st Paper</h3>
+                              <h4>Time: 10:00 am - 11:00 am</h4>
+                            </div>
+                          </div>
+                          <div class="second">
+                            <h5 class="room">Room: 301</h5>
+                            <div class="additional">
+                              <h4>Period: 1st Period</h4>
+                              <h5>Teacher: AKM</h5>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="single-routine">
+                          <div class="first">
+                            <div class="book-img">
+                              <img src="../assets/img/book.png" alt="">
+                            </div>
+                            <div class="details">
+                              <h3>English 1st Paper</h3>
+                              <h4>Time: 10:00 am - 11:00 am</h4>
+                            </div>
+                          </div>
+                          <div class="second">
+                            <h5 class="room">Room: 301</h5>
+                            <div class="additional">
+                              <h4>Period: 1st Period</h4>
+                              <h5>Teacher: AKM</h5>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="single-routine">
+                          <div class="first">
+                            <div class="book-img">
+                              <img src="../assets/img/book.png" alt="">
+                            </div>
+                            <div class="details">
+                              <h3>English 1st Paper</h3>
+                              <h4>Time: 10:00 am - 11:00 am</h4>
+                            </div>
+                          </div>
+                          <div class="second">
+                            <h5 class="room">Room: 301</h5>
+                            <div class="additional">
+                              <h4>Period: 1st Period</h4>
+                              <h5>Teacher: AKM</h5>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="single-routine">
+                          <div class="first">
+                            <div class="book-img">
+                              <img src="../assets/img/book.png" alt="">
+                            </div>
+                            <div class="details">
+                              <h3>English 1st Paper</h3>
+                              <h4>Time: 10:00 am - 11:00 am</h4>
+                            </div>
+                          </div>
+                          <div class="second">
+                            <h5 class="room">Room: 301</h5>
+                            <div class="additional">
+                              <h4>Period: 1st Period</h4>
+                              <h5>Teacher: AKM</h5>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+              </div>
+
+              <!-- Expense and Fund info section -->
+              <div class="row gx-4">
+
+             <!-- Expense info  -->
+                <div class="col-md-6 col-12">
+                  <section class="expense-info">
+                    <form>
+                     <!-- 3 select boxes -->
+                    <div class="input-fields row">
+                      <div class="col-4">
+                        <h5>Year</h5>
+                        <select id="year" name="year">
+                          <option value="" disabled selected>select year</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                        </select>
+                      </div>
+                      <div class="col-4">
+                        <h5>Month</h5>
+                        <select id="year" name="year">
+                          <option value="" disabled selected>select month</option>
+                          <option value="Nursary">January</option>
+                          <option value="February">February</option>
+                          <option value="March">March</option>
+                          <option value="April">April</option>
+                          <option value="May">May</option>
+                          <option value="June">June</option>
+                          <option value="July">July</option>
+                          <option value="August">August</option>
+                          <option value="September">September</option>
+                          <option value="October">October</option>
+                          <option value="November">November</option>
+                          <option value="December">December</option>
+                        </select>
+                      </div>
+                      <div class="col-4">
+                        <button type="submit" class="submit-button-orange">Search</button>
+                      </div>
+                    </div>
+                    </form>
+                    <h6 class="overview-large">Total Expanse: <span>127,543</span></h6>
+                    <!-- show expense data -->
+                    <div class="table ">
+                      <table class="table-head">
+                        <tr>
+                          <th style="width:25%">Type</th>
+                          <th style="width:20%">Amount</th>
+                          <th style="width:55%">Description</th>
+                        </tr>
+                      </table>
+                      <div class="overflow-1">
+                        <table class="table-content">
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+                          <tr>
+                            <td style="width:26%">Salary</td>
+                            <td style="width:20%">12345</td>
+                            <td style="width:54%">Mr. Hafizur march month salary</td>
+                          </tr>
+
+                      </table>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+             <!-- Fund info section -->
+                <div class="col-md-6 col-12">
+                  <section class="fund-info">
+                    <form>
+                    <!-- 3 select boxes -->
+                    <div class="input-fields row gx-3">
+                      <div class="col-3">
+                        <h5>Year</h5>
+                        <select id="year" name="year">
+                          <option value="" disabled selected>select year</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <h5>Month</h5>
+                        <select id="year" name="year">
+                          <option value="" disabled selected>select month</option>
+                          <option value="January">January</option>
+                          <option value="February">February</option>
+                          <option value="March">March</option>
+                          <option value="April">April</option>
+                          <option value="May">May</option>
+                          <option value="June">June</option>
+                          <option value="July">July</option>
+                          <option value="August">August</option>
+                          <option value="September">September</option>
+                          <option value="October">October</option>
+                          <option value="November">November</option>
+                          <option value="December">December</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <h5>Fund</h5>
+                        <select id="fund" name="fund">
+                          <option value="" disabled selected>select fund</option>
+                          <option value="organizing-fund">Organizing Fund</option>
+                          <option value="maintenance-fund">Maintenance Fund</option>
+                          <option value="allumni-fund">Allumni Fund</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <button type="submit" class="submit-button-orange">Search</button>
+                      </div>
+                    </div>
+                    </form>
+                    <h6 class="overview-large">Total Fund Available: <span>127,543</span></h6>
+                    <!-- show expense data -->
+                    <div class="table ">
+                      <table class="table-head">
+                        <tr>
+                          <th style="width:20%">Date</th>
+                          <th style="width:20%">Fund</th>
+                          <th style="width:20%">Debit</th>
+                          <th style="width:20%">Credit</th>
+                          <th style="width:20%">Remaining</th>
+                        </tr>
+                      </table>
+                      <div class="overflow-1">
+                        <table class="table-content">
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+                          <tr>
+                            <td style="width:21%">12/01/2024</td>
+                            <td style="width:21%">General</td>
+                            <td style="width:21%">0</td>
+                            <td style="width:21%">1234</td>
+                            <td style="width:16%">7654</td>
+                          </tr>
+
+                      </table>
+                      </div>
+                    </div>
+                  </section>
+                </div>
 
               </div>
               <!-- <div class="row">
@@ -421,6 +914,9 @@
     <!-- Vendors JS -->
 
     <script src="../assets/js/table.js"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
