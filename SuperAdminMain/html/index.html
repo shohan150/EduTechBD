@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>School Layout</title>
+
+    <meta name="description" content="" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- bootstrap cdn for dashboard -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/table-style.css" />
+    <link rel="stylesheet" href="../assets/css/perfect-scrollbar.css" />
+
+    <!-- css and js for calendar -->
+    <link rel="stylesheet" href="vanilla-calendar.min.css" />
+
+    <link rel="stylesheet" href="themes/dark.min.css" />
+    <link rel="stylesheet" href="themes/light.min.css" />
+
+    <script src="vanilla-calendar.min.js"></script>
+
+    <!-- css and js for calendar -->
+    <link
+      rel="stylesheet"
+      href="../assets/package/build/vanilla-calendar.min.css"
+    />
+    <link rel="stylesheet" href="../assets/package/build/themes/dark.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/package/build/themes/light.min.css"
+    />
+    <script src="../assets/package/build/vanilla-calendar.min.js"></script>
+
+    <!-- css and js for pie chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-text demo menu-text fw-bold ms-2"
+                >School</span
+              >
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
+            >
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboards -->
+
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <div data-i18n="Vertical Form">Dashboard</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <div class="container-fluid mt-2">
+            <div class="navbar_cont row">
+              <div class="col-12">
+                <div
+                  class="d-flex shadow rounded p-3 align-items-center justify-content-between navbar_cont__wrapper text-white"
+                >
+                  <div class="navbar__left d-flex align-items-center gap-1">
+                    <div
+                      class="img_wrapper bg-white rounded-circle p-2 d-flex align-items-center justify-content-center"
+                    >
+                      <img src="../assets/img/logo.png" alt="logo" />
+                    </div>
+                    <h1 class="d-none d-sm-block fs-6">
+                      MKG International School and College
+                    </h1>
+                  </div>
+                  <div class="navbar__right d-flex align-items-center gap-2">
+                    <div class="item position-relative">
+                      <img src="../assets/img/message.png" alt="" />
+                      <div
+                        class="active__icon position-absolute rounded-circle bg-danger"
+                      ></div>
+                    </div>
+                    <span>|</span>
+                    <div class="item position-relative">
+                      <img src="../assets/img/notification.png" alt="" />
+                      <div
+                        class="active__icon position-absolute rounded-circle bg-danger"
+                      ></div>
+                    </div>
+                    <span>|</span>
+                    <div class="profile item d-flex align-items-center gap-1">
+                      <img
+                        class="rounded-circle"
+                        src="../assets/img/avatars/1.png"
+                        alt="avatar"
+                      />
+                      <box-icon type="solid" name="down-arrow"></box-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-fluid flex-grow-1 container-p-y">
+              <!-- Basic Layout -->
+
+              <!-- row -->
+              <!-- total student teacher stuffs -->
+              <div class="row leave_sms student_teacher_stuff">
+                <div class="col-lg-3 col-sm-6 col-12 leave_student student">
+                  <div
+                    class="shadow p-3 mb-3 rounded bg-white position-relative"
+                  >
+                    <div class="dots position-absolute">
+                      <box-icon name="dots-horizontal-rounded"></box-icon>
+                    </div>
+                    <div
+                      class="edit_details_overlay bg-white rounded shadow position-absolute"
+                    >
+                      <ul class="list-unstyled">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">View Details</a></li>
+                      </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="img_wrapper rounded-circle">
+                        <img src="../assets/img/student.png" alt="" />
+                      </div>
+                      <div class="text_wrapper pl-2 border-left border-danger">
+                        <p class="mb-0">Total Student</p>
+                        <span>530</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 leave_teacher teacher">
+                  <div
+                    class="shadow p-3 mb-3 rounded bg-white position-relative"
+                  >
+                    <div class="dots position-absolute">
+                      <box-icon name="dots-horizontal-rounded"></box-icon>
+                    </div>
+                    <div
+                      class="edit_details_overlay bg-white rounded shadow position-absolute"
+                    >
+                      <ul class="list-unstyled">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">View Details</a></li>
+                      </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="img_wrapper rounded-circle">
+                        <img src="../assets/img/teacher.png" alt="" />
+                      </div>
+                      <div class="text_wrapper pl-2 border-left border-danger">
+                        <p class="mb-0">Total Teacher</p>
+                        <span>60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 general_sms stuffs">
+                  <div
+                    class="shadow p-3 mb-3 rounded bg-white position-relative"
+                  >
+                    <div class="dots position-absolute">
+                      <box-icon name="dots-horizontal-rounded"></box-icon>
+                    </div>
+                    <div
+                      class="edit_details_overlay bg-white rounded shadow position-absolute"
+                    >
+                      <ul class="list-unstyled">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">View Details</a></li>
+                      </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="img_wrapper rounded-circle">
+                        <img src="../assets/img/stuffs.png" alt="" />
+                      </div>
+                      <div class="text_wrapper pl-2 border-left border-danger">
+                        <p class="mb-0">Total Stuffs</p>
+                        <span>10</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 masking_sms parents">
+                  <div
+                    class="shadow p-3 mb-3 rounded bg-white position-relative"
+                  >
+                    <div class="dots position-absolute">
+                      <box-icon name="dots-horizontal-rounded"></box-icon>
+                    </div>
+                    <div
+                      class="edit_details_overlay bg-white rounded shadow position-absolute"
+                    >
+                      <ul class="list-unstyled">
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">View Details</a></li>
+                      </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="img_wrapper rounded-circle">
+                        <img src="../assets/img/parents.png" alt="" />
+                      </div>
+                      <div class="text_wrapper pl-2 border-left border-danger">
+                        <p class="mb-0">Total Parents</p>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- detials_attendance_notice -->
+              <div class="row details_attendance_notice justify-content-center">
+                <!-- student details -->
+                <div
+                  class="col-lg-3 col-md-6 col-12 student_details position-relative"
+                >
+                  <div class="position-absolute edit__icon">
+                    <img src="../assets/img/edit_icon.png" alt="edit" />
+                  </div>
+                  <div class="shadow p-2 py-3 mb-3 rounded bg-white">
+                    <div
+                      class="d-flex flex-column justify-content-start gap-1 align-items-center"
+                    >
+                      <div class="img_wrapper rounded-circle">
+                        <img src="../assets/img/avatars/1.png" alt="avatar" />
+                      </div>
+                      <h3
+                        class="name fs-6 rounded w-100 text-white py-1 text-center mt-2 mb-1"
+                      >
+                        Abdur Kadir Khan
+                      </h3>
+                      <div class="table_wrapper w-100 rounded">
+                        <table class="">
+                          <tbody>
+                            <tr>
+                              <th>Reg No</th>
+                              <td>1134234</td>
+                            </tr>
+                            <tr>
+                              <th>User Type</th>
+                              <td>Admin</td>
+                            </tr>
+                            <tr>
+                              <th>Designation</th>
+                              <td>Principal</td>
+                            </tr>
+                            <tr>
+                              <th>Phone No</th>
+                              <td>01922323321</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- attendance info graph -->
+                <div class="col-lg-6 col-md col-12 attendance_info">
+                  <div class="shadow mb-3 rounded bg-white">
+                    <div class="heading rounded-top pb-3 px-3 text-white">
+                      <h5 class="m-0">Attendance Information</h5>
+                    </div>
+                    <div
+                      class="student_teacher_attendance flex-sm-nowrap flex-wrap p-3 d-flex gap-3 justify-content-center"
+                    >
+                      <!-- student attendance graph -->
+                      <div
+                        class="attendance py-3 w-100 w-sm-50 rounded student_attendance position-relative"
+                      >
+                        <div class="dots position-absolute ki_holo">
+                          <box-icon name="dots-horizontal-rounded"></box-icon>
+                        </div>
+                        <div
+                          class="edit_details_overlay bg-white rounded shadow position-absolute"
+                        >
+                          <ul class="list-unstyled">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">View Details</a></li>
+                          </ul>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-center position-relative pieChart_wrapper__holder"
+                        >
+                          <div class="pieChart_wrapper">
+                            <canvas id="myChart"></canvas>
+                          </div>
+                          <div
+                            class="total position-absolute top-50 start-50 text-center"
+                          >
+                            <p class="fw-medium">Total</p>
+                            <p class="amount"></p>
+                          </div>
+                        </div>
+                        <div class="chart_info mb-2">
+                          <h6 class="text-center mt-1 mb-3 mb-md-0 mb-lg-3">
+                            Students
+                          </h6>
+                        </div>
+
+                        <div
+                          class="present_absent mt-2 px-3 d-flex align-items-center justify-content-between"
+                        >
+                          <div class="present item">
+                            <p class="present_title">Present</p>
+                            <p class="present_number">300</p>
+                          </div>
+                          <div
+                            class="present border-start border-primary"
+                            style="width: 1px; height: 40px"
+                          ></div>
+                          <div class="absent item">
+                            <p class="absent_title">Absent</p>
+                            <p class="absent_number">45</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- teacher attendance graph -->
+                      <div
+                        class="attendance w-100 w-sm-50 py-3 rounded teacher_attendance position-relative"
+                      >
+                        <div class="dots position-absolute">
+                          <box-icon name="dots-horizontal-rounded"></box-icon>
+                        </div>
+                        <div
+                          class="edit_details_overlay bg-white rounded shadow position-absolute"
+                        >
+                          <ul class="list-unstyled">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">View Details</a></li>
+                          </ul>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-center position-relative pieChart_wrapper__holder"
+                        >
+                          <div class="pieChart_wrapper">
+                            <canvas id="myChart2"></canvas>
+                          </div>
+                          <div
+                            class="total position-absolute top-50 start-50 text-center"
+                          >
+                            <p class="fw-medium">Total</p>
+                            <p class="amount"></p>
+                          </div>
+                        </div>
+                        <div class="chart_info">
+                          <h6 class="text-center mt-1 mb-3 mb-md-0 mb-lg-3">
+                            Teahcers
+                          </h6>
+                        </div>
+                        <div
+                          class="present_absent mt-2 px-3 d-flex align-items-center justify-content-between"
+                        >
+                          <div class="present item">
+                            <p class="present_title">Present</p>
+                            <p class="present_number">300</p>
+                          </div>
+                          <div
+                            class="present border-start border-warning"
+                            style="width: 1px; height: 40px"
+                          ></div>
+                          <div class="absent item">
+                            <p class="absent_title">Absent</p>
+                            <p class="absent_number">45</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- notices and events -->
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="shadow mb-3 rounded bg-white">
+                    <div class="heading rounded-top pb-3 px-3 text-white">
+                      <h5 class="m-0">Notice & Events</h5>
+                    </div>
+
+                    <div class="notices">
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="badge text-bg-success"
+                            >16 June, 2021</span
+                          >
+                          <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Eveniet deleniti iste fugit
+                            corrupti aperiam ut reprehenderit, iure doloremque
+                            earum, impedit autem hic itaque provident! Tempora
+                            officiis animi quam possimus tempore cum non quis
+                            blanditiis voluptates officia dolor aperiam modi
+                            porro ad doloremque itaque error ea, fugiat
+                            laudantium, perspiciatis corporis doloribus.
+                          </p>
+                        </li>
+                        <li>
+                          <span class="badge text-bg-warning"
+                            >16 June, 2021</span
+                          >
+                          <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod
+                          </p>
+                        </li>
+                        <li>
+                          <span class="badge text-bg-danger"
+                            >16 June, 2021</span
+                          >
+                          <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="text-right pr-2">
+                      <buttn class="btn btn-primary">View All</buttn>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- leave teacher student and sms -->
+
+              <div class="row leave_sms">
+                <div class="col-12 col-md-6">
+                  <div class="shadow mb-3 rounded bg-white">
+                    <div
+                      class="heading d-flex justify-content-between align-items-center rounded-top pb-3 px-3 text-white position-relative"
+                    >
+                      <h5 class="m-0">Leave Information</h5>
+                      <div
+                        class="dots bg-white rounded-circle d-flex justify-content-center align-items-center"
+                      >
+                        <box-icon name="dots-horizontal-rounded"></box-icon>
+                      </div>
+                      <div
+                        class="edit_details_overlay bg-white rounded shadow position-absolute"
+                      >
+                        <ul class="list-unstyled">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">View Details</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="p-3 d-flex flex-wrap flex-sm-nowrap flex-md-wrap flex-lg-nowrap gap-2"
+                    >
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 rounded bg-white leave_student"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/leave-student.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Leave Teacher</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 rounded bg-white leave_teacher"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/leave-teacher.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Leave Student</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="shadow mb-3 rounded bg-white">
+                    <div
+                      class="heading d-flex justify-content-between align-items-center rounded-top pb-3 px-3 text-white position-relative"
+                    >
+                      <h5 class="m-0">SMS Information</h5>
+                      <div
+                        class="dots bg-white rounded-circle d-flex justify-content-center align-items-center"
+                      >
+                        <box-icon name="dots-horizontal-rounded"></box-icon>
+                      </div>
+                      <div
+                        class="edit_details_overlay bg-white rounded shadow position-absolute"
+                      >
+                        <ul class="list-unstyled">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">View Details</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="p-3 d-flex flex-wrap flex-sm-nowrap flex-md-wrap flex-lg-nowrap gap-2"
+                    >
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 rounded bg-white general_sms"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/sms.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">General SMS</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 rounded bg-white general_sms"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/msms.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Masking SMS</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- event and gender -->
+
+              <div class="row">
+                <!-- events -->
+                <div class="col-12 col-lg-6 pb-3">
+                  <div class="shadow mb-3 rounded bg-white h-100">
+                    <div
+                      class="heading d-flex justify-content-between align-items-center rounded-top pb-3 px-3 text-white position-relative"
+                    >
+                      <h5 class="m-0">Event Setup Tool</h5>
+                      <div
+                        class="dots bg-white rounded-circle d-flex justify-content-center align-items-center"
+                      >
+                        <box-icon name="dots-horizontal-rounded"></box-icon>
+                      </div>
+                      <div
+                        class="edit_details_overlay bg-white rounded shadow position-absolute"
+                      >
+                        <ul class="list-unstyled">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">View Details</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div
+                      class="vanillar_calendar_wrapper d-flex justify-content-center"
+                    >
+                      <!-- eveent items -->
+                      <div class="events notices">
+                        <ul class="list-unstyled">
+                          <li>
+                            <span class="badge text-bg-success"
+                              >16 June, 2021</span
+                            >
+                            <p class="">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit. Eveniet deleniti iste fugit
+                              corrupti aperiam ut reprehenderit, iure doloremque
+                              earum, impedit autem hic itaque provident! Tempora
+                              officiis animi quam possimus tempore cum non quis
+                              blanditiis voluptates officia dolor aperiam modi
+                              porro ad doloremque itaque error ea, fugiat
+                              laudantium, perspiciatis corporis doloribus.
+                            </p>
+                          </li>
+                          <li>
+                            <span class="badge text-bg-warning"
+                              >16 June, 2021</span
+                            >
+                            <p class="">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod
+                            </p>
+                          </li>
+                          <li>
+                            <span class="badge text-bg-danger"
+                              >16 June, 2021</span
+                            >
+                            <p class="">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod
+                            </p>
+                          </li>
+                        </ul>
+                        <div class="text-right pr-2">
+                          <buttn class="btn btn-primary">View All</buttn>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 leave_sms male_female">
+                  <!-- Gender Wise Student information -->
+                  <div class="shadow mb-3 rounded bg-white">
+                    <div
+                      class="heading d-flex justify-content-between align-items-center rounded-top pb-3 px-3 text-white position-relative"
+                    >
+                      <h5 class="m-0">Gender Wise Student</h5>
+                      <div
+                        class="dots bg-white rounded-circle d-flex justify-content-center align-items-center"
+                      >
+                        <box-icon name="dots-horizontal-rounded"></box-icon>
+                      </div>
+                      <div
+                        class="edit_details_overlay bg-white rounded shadow position-absolute"
+                      >
+                        <ul class="list-unstyled">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">View Details</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-3 d-flex flex-wrap flex-sm-nowrap gap-2">
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 mb-1 rounded bg-white male"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/male.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Male Student</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 mb-1 rounded bg-white female"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/female.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Female Student</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Gender Wise Teacher & Staff information -->
+                  <div class="shadow mb-3 rounded bg-white">
+                    <div
+                      class="heading d-flex justify-content-between align-items-center rounded-top pb-3 px-3 text-white position-relative"
+                    >
+                      <h5 class="m-0">Gender Wise Teacher & Staff</h5>
+                      <div
+                        class="dots bg-white rounded-circle d-flex justify-content-center align-items-center"
+                      >
+                        <box-icon name="dots-horizontal-rounded"></box-icon>
+                      </div>
+                      <div
+                        class="edit_details_overlay bg-white rounded shadow position-absolute"
+                      >
+                        <ul class="list-unstyled">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">View Details</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="p-3 d-flex flex-wrap flex-sm-nowrap gap-2">
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 mb-1 rounded bg-white male"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/male.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Male Teacher</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="shadow w-100 w-sm-50 p-3 mb-1 rounded bg-white female"
+                      >
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="img_wrapper rounded-circle">
+                            <img src="../assets/img/female.png" alt="" />
+                          </div>
+                          <div
+                            class="text_wrapper pl-2 border-left border-danger"
+                          >
+                            <p class="mb-0">Female Teacher</p>
+                            <span>5000</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- support token and fashion video -->
+              <div class="row fashion_video">
+                <!-- support token -->
+                <div class="col-12 col-md-6">
+                  <div class="shadow h-100 mb-3 rounded bg-white">
+                    <div
+                      class="heading d-flex justify-content-between align-items-center rounded-top pb-3 px-3 text-white position-relative"
+                    >
+                      <h5 class="m-0">Support Token</h5>
+                      <div
+                        class="dots bg-white rounded-circle d-flex justify-content-center align-items-center"
+                      >
+                        <box-icon name="dots-horizontal-rounded"></box-icon>
+                      </div>
+                      <div
+                        class="edit_details_overlay bg-white rounded shadow position-absolute"
+                      >
+                        <ul class="list-unstyled">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">View Details</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- form -->
+                    <div class="form_wrapper p-3 support fs-6">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Title</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="title"
+                            placeholder="Type your support title"
+                          />
+                        </div>
+                        <div
+                          class="form-group description_wrapper position-relative"
+                        >
+                          <label for="description">Description</label>
+                          <textarea
+                            placeholder="Write the problem in details"
+                            class="form-control"
+                            id="description"
+                            rows="4"
+                          ></textarea>
+                          <span class="position-absolute bottom-0 end-0"
+                            >500 word maximum</span
+                          >
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <div class="input-group custom_file_wrapper">
+                            <div class="custom-file">
+                              <input
+                                type="file"
+                                class="custom-file-input"
+                                id="inputGroupFile01"
+                              />
+                              <label
+                                class="custom-file-label"
+                                for="inputGroupFile01"
+                              >
+                                <img
+                                  src="../assets/img/paperclip.png"
+                                  alt="file"
+                                />
+                              </label>
+                            </div>
+                            <div class="input-group-prepend">
+                              <span class="input-group-text d-none d-sm-inline"
+                                >Attach a file if needed</span
+                              >
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary px-3">
+                            Submit Token
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- fashion video -->
+                <div class="col-12 col-md-6 fashion_video__wrapper">
+                  <div
+                    class="d-flex flex-column flex-nowrap h-100 justify-content-stretch"
+                  >
+                    <div class="mb-md-2 mb-0 mt-3 mt-md-0 h-50">
+                      <img
+                        src="../assets/img/fashion.png"
+                        alt="fasion"
+                        class="w-100 rounded h-100"
+                      />
+                    </div>
+                    <div class="h-50 mt-3 mt-md-0">
+                      <img
+                        src="../assets/img/video.png"
+                        alt="fasion"
+                        class="w-100 rounded object-cover h-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <footer class="container-fluid mb-2">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="d-flex flex-wrap flex-md-nowrap shadow p-3 rounded justify-content-center justify-content-md-between align-items-center footer__cont"
+                  >
+                    <p class="text-center text-md-left copyright">
+                      @2024 all rights are reserved by continental ventures
+                      limited
+                    </p>
+                    <div class="links text-right">
+                      <a href="#">Privacy Policy</a>
+                      <span>|</span>
+                      <a href="#">Terms of use</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- js for pie chart -->
+    <script>
+      const ctx = document.getElementById("myChart");
+      const ctx2 = document.getElementById("myChart2");
+
+      const studentData = {
+        labels: ["Present", "Absent"],
+        datasets: [
+          {
+            label: "",
+            borderWidth: 0,
+            data: [300, 45],
+            backgroundColor: ["#77DF40", "#FF3E1D"],
+            hoverOffset: 2,
+          },
+        ],
+      };
+
+      // student attendance chart
+
+      const studentAttendancePieChart = new Chart(ctx, {
+        type: "doughnut",
+        data: studentData,
+        options: {
+          responsive: true,
+          backgroundColor: "#fff",
+          cutout: "75%",
+          radius: 50,
+          plugins: {
+            legend: {
+              display: false,
+              position: "bottom",
+            },
+            title: {
+              display: false,
+              text: "Students",
+            },
+          },
+        },
+      });
+
+      document.querySelector(".student_attendance .present_title").style.color =
+        studentData.datasets[0].backgroundColor[0];
+      document.querySelector(".student_attendance .absent_title").style.color =
+        studentData.datasets[0].backgroundColor[1];
+      document.querySelector(".student_attendance .total .amount").textContent =
+        studentData.datasets[0].data[0] + studentData.datasets[0].data[1];
+
+      // teacher attendance chart
+
+      const teacherData = {
+        labels: ["Present", "Absent"],
+        datasets: [
+          {
+            label: "",
+            borderWidth: 0,
+            data: [300, 45],
+            backgroundColor: ["#77DF40", "#FF3E1D"],
+            hoverOffset: 2,
+          },
+        ],
+      };
+
+      const teacherAttendancePieChart = new Chart(ctx2, {
+        type: "doughnut",
+        data: teacherData,
+        options: {
+          responsive: true,
+          backgroundColor: "#fff",
+          cutout: "75%",
+          radius: 50,
+          plugins: {
+            legend: {
+              display: false,
+              position: "bottom",
+            },
+            title: {
+              display: false,
+              text: "Students",
+            },
+          },
+        },
+      });
+      document.querySelector(".teacher_attendance .present_title").style.color =
+        studentData.datasets[0].backgroundColor[0];
+      document.querySelector(".teacher_attendance .absent_title").style.color =
+        studentData.datasets[0].backgroundColor[1];
+      document.querySelector(".teacher_attendance .total .amount").textContent =
+        studentData.datasets[0].data[0] + studentData.datasets[0].data[1];
+    </script>
+
+    <!-- edit details toggle by three dots -->
+    <script>
+      const threeDots = document.querySelectorAll(".dots");
+      threeDots.forEach((item) => {
+        item.addEventListener("click", function () {
+          this.parentNode
+            .querySelector(".edit_details_overlay")
+            .classList.toggle("active");
+        });
+      });
+    </script>
+
+    <!-- js for clalendar -->
+    <!-- <script>
+    const calendar = new VanillaCalendar('.vanilla-calendar', {
+      date: {
+        min: '1970-01-01',
+        max: '2470-12-31',
+        today: new Date(),
+      },
+      DOMTemplates: {
+        default: `
+        <div class="vanilla-calendar-header">
+          <div class="custom__heading">
+            <p>Choose a date to setup event</p>
+            <div class="month_year">
+              <#Month />
+              <#Year />
+            </div>            
+          </div>
+          <div class="arrows">            
+            <#ArrowPrev />          
+            <#ArrowNext />
+            </div>
+        </div>
+        <div class="vanilla-calendar-wrapper">
+          <#WeekNumbers />
+          <div class="vanilla-calendar-content">
+            <#Week />
+            <#Days />
+          </div>
+        </div>
+        <#ControlTime />
+      `
+      }
+    });
+    calendar.init();
+  </script> -->
+  </body>
+</html>
