@@ -104,14 +104,14 @@ p {
   align-items: center;
   justify-content: center;
 }
-.dots{
+.dots {
   z-index: 200;
 }
 
-.edit_details_overlay{
+.edit_details_overlay {
   display: none;
 }
-.edit_details_overlay.active{
+.edit_details_overlay.active {
   display: block;
 }
 /* student details attendance and notice and events */
@@ -251,7 +251,6 @@ p {
   z-index: -1;
 }
 
-
 .pieChart_wrapper__holder .total {
   transform: translate(-50%, -50%);
   z-index: 50;
@@ -262,15 +261,15 @@ p {
 }
 
 /* edit overlay */
-.edit_details_overlay{
+.edit_details_overlay {
   top: 40px;
   right: 10px;
   height: auto !important;
   width: auto;
   z-index: 110;
-  padding-bottom: 0 ;
+  padding-bottom: 0;
 }
-.edit_details_overlay ul{
+.edit_details_overlay ul {
   margin-bottom: 0;
 }
 .edit_details_overlay ul li {
@@ -280,13 +279,12 @@ p {
 .edit_details_overlay ul li:hover {
   background-color: #131f73;
 }
-.edit_details_overlay ul li:hover a{
+.edit_details_overlay ul li:hover a {
   color: #fff;
   text-decoration: none;
 }
-.edit_details_overlay ul li a{
+.edit_details_overlay ul li a {
   color: #131f73;
-
 }
 
 @media only screen and (max-width: 575px) {
@@ -340,7 +338,6 @@ p {
 }
 
 @media only screen and (max-width: 991px) {
-
   .notices ul li p {
     font-size: 15px;
     line-height: normal;
@@ -348,19 +345,19 @@ p {
   }
   .details_attendance_notice .col-12:last-of-type .shadow {
     height: auto;
-}
-.details_attendance_notice .text-right{
-  padding-bottom: 20px;
-}
+  }
+  .details_attendance_notice .text-right {
+    padding-bottom: 20px;
+  }
 }
 /* events */
-.events ul li p{
+.events ul li p {
   font-size: 15px;
   line-height: normal;
   max-height: 70px;
 }
 
-/* calendar */ 
+/* calendar */
 
 /*
 .vanilla-calendar .month_year button {
@@ -495,4 +492,8 @@ p {
   .footer__cont .copyright {
     width: 100%;
   }
+}
+
+#myChart3 {
+  height: 165px;
 }

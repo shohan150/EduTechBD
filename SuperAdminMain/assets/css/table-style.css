@@ -1,14 +1,17 @@
 section {
   background-color: white;
   padding: 20px;
-  border-radius: 20px;
-  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.input-fields {
+  margin: 0 -10px;
 }
 .input-fields h5 {
   color: #131f73;
   font-size: 14px;
   font-weight: 600;
-  line-height: 10px;
+  line-height: 32px;
 }
 
 .input-fields select {
@@ -35,7 +38,7 @@ section {
   font-size: 12px;
   color: gray;
   text-align: end;
-  margin-top: 20px;
+  line-height: 40px;
 }
 .overview span {
   color: #77df40;
@@ -56,7 +59,8 @@ section {
 .fees-info .table-head th {
   padding: 10px;
   font-size: 14px;
-  font-weight: 500;
+  color: #00000080;
+  font-weight: 600;
 }
 
 .fees-info table.table-head .status {
@@ -65,6 +69,7 @@ section {
 .fees-info .table-content {
   font-size: 14px;
   font-weight: 500;
+  color: #00000080;
   background-color: #d2f2d475;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -104,6 +109,7 @@ section {
 .fees-info .payment-status.unpaid {
   background-color: #ff3e1d;
 }
+
 .payment-overview {
   border: 1px solid #d2f2d4;
   border-radius: 6px;
@@ -119,6 +125,8 @@ section {
 
 .graph-and-table {
   display: flex;
+  padding: 10px 0;
+  margin: 0;
 }
 .graph {
   width: 30%;
@@ -162,6 +170,8 @@ section {
   width: 100%;
   background-color: #d2f2d475;
   font-size: 14px;
+  color: #00000080;
+  font-weight: 500;
 }
 
 .payment-table .table-content tr {
@@ -185,12 +195,13 @@ section {
   border-radius: 4px;
   color: white;
   padding: 6px;
-  margin-top: 25px;
+  margin-top: 32px;
   font-size: 14px;
 }
 
 .overview-large {
   font-size: 16px;
+  line-height: 45px;
   color: gray;
   text-align: end;
   margin-top: 20px;
@@ -295,8 +306,8 @@ section {
 
 .online-payslip .table-head th {
   color: #131f73;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   padding: 10px;
 }
 .online-payslip .table-content {
@@ -315,13 +326,14 @@ section {
   color: #131f73;
   font-size: 14px;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 5px 10px;
 }
 
 .online-payslip .table-content .data {
   padding-left: 10px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 6px;
 }
 .online-payslip .table-content #total-payable td {
   color: #77df40;
@@ -367,7 +379,7 @@ section {
 
 .class-routine .routine .heading {
   color: #131f73;
-  background-color: #1d1e4e30;
+  background-color: #6b6eff50;
   font-size: 14px;
   font-weight: 600;
   padding: 12px 10px;
@@ -376,15 +388,9 @@ section {
   border-top-left-radius: 6px;
 }
 .class-routine .routines {
-  padding: 0 10px;
-  height: 356px;
-  /* overflow-y: auto;/\ */
-  position: relative;
-  /* margin: 100px auto; */
-  /* padding: 0px; */
-  /* width: 600px; */
-  /* height: 500px; */
-  overflow: auto;
+  padding: 10px;
+  height: 399px;
+  overflow-y: scroll;
 }
 
 .class-routine .routines .single-routine {
@@ -396,11 +402,16 @@ section {
   padding: 15px 10px;
   margin-bottom: 6px;
 }
-.routines .single-routine .first,
-.routines .single-routine .second {
+.routines .single-routine .first {
   display: flex;
   align-items: center;
 }
+
+.routines .single-routine .second {
+  display: flex;
+  align-items: start;
+}
+
 .class-routine .routines .book-img {
   width: 34px;
   height: 34px;
@@ -420,13 +431,13 @@ section {
   font-size: 16px;
   color: #131f73;
   font-weight: 500;
-  line-height: 10px;
+  line-height: 20px;
 }
 .class-routine .routines .details h4 {
   font-size: 12px;
   color: #636363;
   font-weight: 400;
-  line-height: 5px;
+  line-height: 20px;
   margin-bottom: 0;
 }
 
@@ -434,7 +445,8 @@ section {
   font-size: 12px;
   color: #6b6eff;
   font-weight: 400;
-  margin-right: 10px;
+  line-height: 20px;
+  margin-right: 10px !important;
   padding-right: 10px;
   border-right: 1px solid #6b6eff;
 }
@@ -443,7 +455,7 @@ section {
   color: #636363;
   font-size: 14px;
   font-weight: 500;
-  line-height: 10px;
+  line-height: 20px;
   margin-bottom: 10px;
 }
 
@@ -451,7 +463,7 @@ section {
   color: #ff3e1d;
   font-size: 12px;
   font-weight: 500;
-  line-height: 10px;
+  line-height: 20px;
   margin-bottom: 0;
 }
 
