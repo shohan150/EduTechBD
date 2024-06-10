@@ -127,6 +127,30 @@
           min-width: 100px;
         }
       }
+
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+
+        #schedule-container,
+        #schedule-container * {
+          visibility: visible;
+        }
+
+        #schedule-container {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+        }
+
+        .period,
+        .header,
+        .day-label {
+          min-width: 65px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -263,6 +287,7 @@
             .querySelector(".delete")
             .addEventListener("click", deleteContent);
         }
+
         function saveRoutine() {
           const routineData = {};
           const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
