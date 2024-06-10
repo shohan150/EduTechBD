@@ -40,7 +40,7 @@
       class="template-customizer-theme-css"
     />
     <link rel="stylesheet" href="../assets/css/demo.css" />
-    <link rel="stylesheet" href="../assets/css/table.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 
     <!--Page CSS --/>
 
@@ -159,51 +159,138 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <h4 class="py-3 mb-4">
-                <span class="text-muted fw-light">Exam/</span> Seat plan
+                <span class="text-muted fw-light">Class/</span> Routine
               </h4>
 
               <!-- Basic Layout -->
               <div class="row">
-                <!-- Admit card section -->
-                <div id="tables">
-                  <div class="first-table">
-                    <h2>Merit List</h2>
-                    <h4>_________ Term Final Result</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <table>
-                      <tr>
-                        <th class="serial">S.N.</th>
-                        <th class="name">Student Name</th>
-                        <th class="number">Viva</th>
-                        <th class="number">Written</th>
-                        <th class="total">Total</th>
-                      </tr>
-                    </table>
+                <!-- Routine section -->
+
+                <div id="subjects">
+                  <div class="subject" draggable="true">Math</div>
+                  <div class="subject" draggable="true">Science</div>
+                  <div class="subject" draggable="true">History</div>
+                  <div class="subject" draggable="true">Art</div>
+                  <div class="subject" draggable="true">PE</div>
+                  <div class="subject" draggable="true">Music</div>
+                  <div class="subject" draggable="true">Geography</div>
+                  <div class="subject" draggable="true">English</div>
+                </div>
+
+                <div id="schedule">
+                  <div class="header"></div>
+                  <div class="header">1st Period</div>
+                  <div class="header">2nd Period</div>
+                  <div class="header">3rd Period</div>
+                  <div class="header">4th Period</div>
+                  <div class="header">5th Period</div>
+                  <div class="header">6th Period</div>
+
+                  <div class="day-label">Monday</div>
+                  <div class="period" id="mon-p1">
+                    <button class="delete">x</button>
                   </div>
-                  <div class="second-table">
-                    <h2>Merit List</h2>
-                    <h4>_________ Term Final Result</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    <table>
-                      <tr>
-                        <th class="serial">S.N.</th>
-                        <th class="name">Student Name</th>
-                        <th class="number">Viva</th>
-                        <th class="number">Written</th>
-                        <th class="total">Total</th>
-                      </tr>
-                    </table>
+                  <div class="period" id="mon-p2">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="mon-p3">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="mon-p4">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="mon-p5">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="mon-p6">
+                    <button class="delete">x</button>
+                  </div>
+
+                  <div class="day-label">Tuesday</div>
+                  <div class="period" id="tue-p1">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="tue-p2">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="tue-p3">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="tue-p4">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="tue-p5">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="tue-p6">
+                    <button class="delete">x</button>
+                  </div>
+
+                  <div class="day-label">Wednesday</div>
+                  <div class="period" id="wed-p1">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="wed-p2">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="wed-p3">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="wed-p4">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="wed-p5">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="wed-p6">
+                    <button class="delete">x</button>
+                  </div>
+
+                  <div class="day-label">Thursday</div>
+                  <div class="period" id="thu-p1">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="thu-p2">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="thu-p3">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="thu-p4">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="thu-p5">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="thu-p6">
+                    <button class="delete">x</button>
+                  </div>
+
+                  <div class="day-label">Friday</div>
+                  <div class="period" id="fri-p1">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="fri-p2">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="fri-p3">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="fri-p4">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="fri-p5">
+                    <button class="delete">x</button>
+                  </div>
+                  <div class="period" id="fri-p6">
+                    <button class="delete">x</button>
                   </div>
                 </div>
 
                 <!-- print button -->
-                <div class="button_area">
+                <!-- <div class="button_area">
                   <button id="print_tables">Print Tables</button>
-                </div>
+                </div> -->
               </div>
             </div>
             <!--  Content -->
@@ -235,6 +322,8 @@
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
+
+    <script src="../assets/js/script.js"></script>
 
     <!-- empty table rows -->
     <script>
