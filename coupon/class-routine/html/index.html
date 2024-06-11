@@ -164,7 +164,20 @@
 
               <!-- Basic Layout -->
               <div class="row">
-                <!-- Routine section -->
+                <div id="form-container">
+                  <form id="period-form">
+                    <label for="num-periods">Number of periods per day:</label>
+                    <input
+                      type="number"
+                      id="num-periods"
+                      name="num-periods"
+                      min="1"
+                      max="10"
+                      required
+                    />
+                    <button type="submit">Create Table</button>
+                  </form>
+                </div>
 
                 <div id="subjects">
                   <div class="subject" draggable="true">Math</div>
@@ -177,120 +190,158 @@
                   <div class="subject" draggable="true">English</div>
                 </div>
 
-                <div id="schedule">
-                  <div class="header"></div>
-                  <div class="header">1st Period</div>
-                  <div class="header">2nd Period</div>
-                  <div class="header">3rd Period</div>
-                  <div class="header">4th Period</div>
-                  <div class="header">5th Period</div>
-                  <div class="header">6th Period</div>
-
-                  <div class="day-label">Monday</div>
-                  <div class="period" id="mon-p1">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="mon-p2">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="mon-p3">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="mon-p4">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="mon-p5">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="mon-p6">
-                    <button class="delete">x</button>
-                  </div>
-
-                  <div class="day-label">Tuesday</div>
-                  <div class="period" id="tue-p1">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="tue-p2">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="tue-p3">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="tue-p4">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="tue-p5">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="tue-p6">
-                    <button class="delete">x</button>
-                  </div>
-
-                  <div class="day-label">Wednesday</div>
-                  <div class="period" id="wed-p1">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="wed-p2">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="wed-p3">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="wed-p4">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="wed-p5">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="wed-p6">
-                    <button class="delete">x</button>
-                  </div>
-
-                  <div class="day-label">Thursday</div>
-                  <div class="period" id="thu-p1">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="thu-p2">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="thu-p3">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="thu-p4">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="thu-p5">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="thu-p6">
-                    <button class="delete">x</button>
-                  </div>
-
-                  <div class="day-label">Friday</div>
-                  <div class="period" id="fri-p1">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="fri-p2">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="fri-p3">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="fri-p4">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="fri-p5">
-                    <button class="delete">x</button>
-                  </div>
-                  <div class="period" id="fri-p6">
-                    <button class="delete">x</button>
+                <div id="schedule-container">
+                  <div
+                    id="schedule"
+                    style="grid-template-columns: 100px repeat(7, 1fr)"
+                  >
+                    <div class="header"></div>
+                    <div class="header">1 Period</div>
+                    <div class="header">2 Period</div>
+                    <div class="header">3 Period</div>
+                    <div class="header">4 Period</div>
+                    <div class="header">5 Period</div>
+                    <div class="header">6 Period</div>
+                    <div class="header">7 Period</div>
+                    <div class="day-label">Saturday</div>
+                    <div class="period" id="sat-p1">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sat-p2">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sat-p3">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sat-p4">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sat-p5">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sat-p6">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sat-p7">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="day-label">Sunday</div>
+                    <div class="period" id="sun-p1">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sun-p2">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sun-p3">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sun-p4">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sun-p5">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sun-p6">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="sun-p7">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="day-label">Monday</div>
+                    <div class="period" id="mon-p1">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="mon-p2">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="mon-p3">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="mon-p4">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="mon-p5">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="mon-p6">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="mon-p7">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="day-label">Tuesday</div>
+                    <div class="period" id="tue-p1">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="tue-p2">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="tue-p3">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="tue-p4">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="tue-p5">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="tue-p6">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="tue-p7">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="day-label">Wednesday</div>
+                    <div class="period" id="wed-p1">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="wed-p2">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="wed-p3">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="wed-p4">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="wed-p5">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="wed-p6">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="wed-p7">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="day-label">Thursday</div>
+                    <div class="period" id="thu-p1">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="thu-p2">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="thu-p3">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="thu-p4">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="thu-p5">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="thu-p6">
+                      <button class="delete">X</button>
+                    </div>
+                    <div class="period" id="thu-p7">
+                      <button class="delete">X</button>
+                    </div>
                   </div>
                 </div>
 
-                <!-- print button -->
-                <!-- <div class="button_area">
-                  <button id="print_tables">Print Tables</button>
-                </div> -->
+                <div id="buttons">
+                  <button id="save-button">Save</button>
+                  <button id="print-button">Print</button>
+                </div>
               </div>
             </div>
             <!--  Content -->
@@ -323,36 +374,6 @@
     </div>
     <!-- / Layout wrapper -->
 
-    <script src="../assets/js/script.js"></script>
-
-    <!-- empty table rows -->
-    <script>
-      const table1 = document.querySelector(".first-table table");
-      const table2 = document.querySelector(".second-table table");
-
-      for (let i = 1; i <= 35; i++) {
-        const newRow = document.createElement("tr");
-
-        for (let j = 0; j < 5; j++) {
-          const newCell = document.createElement("td");
-          newRow.appendChild(newCell);
-          if (j === 0) newCell.innerHTML = i;
-        }
-        table1.appendChild(newRow);
-      }
-
-      for (let i = 1; i <= 35; i++) {
-        const newRow = document.createElement("tr");
-
-        for (let j = 0; j < 5; j++) {
-          const newCell = document.createElement("td");
-          newRow.appendChild(newCell);
-          if (j === 0) newCell.innerHTML = i;
-        }
-        table2.appendChild(newRow);
-      }
-    </script>
-
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
@@ -368,6 +389,8 @@
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
+    <script src="../assets/js/script.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
@@ -381,9 +404,9 @@
     ></script>
     <!-- print the tables -->
     <script>
-      $("#print_tables").on("click", function () {
-        $("#tables").print({
-          title: "Tables",
+      $("#print-button").on("click", function () {
+        $("#schedule-container").print({
+          title: "Routine",
           doctype: "<!doctype html>",
         });
       });
