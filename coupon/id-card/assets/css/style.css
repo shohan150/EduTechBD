@@ -1,33 +1,73 @@
+.id-card-template {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+.form-container > h4 {
+  margin: 25px 0;
+}
+.input-group {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.input-group h4 {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.input-group input {
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 .id-card-container {
   position: relative;
   width: 400px;
   height: 600px;
+  background-image: url("../template.svg");
+  background-size: cover;
 }
 
-.id-card-image {
-  object-fit: cover;
+.id-info {
+  position: absolute;
+  color: white;
+  padding: 5px;
+}
+
+.id-no {
+  font-weight: bold;
+  top: 28%;
+  left: 40%;
+}
+
+.student-name {
+  top: 32%;
+  left: 30%;
 }
 
 .student-image {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 120px;
   height: 120px;
-  border-radius: 50%;
+  border: 2px solid yellow;
+  border-radius: 5px;
   background-color: #fff;
+  top: 40px;
+  left: 35%;
 }
 
-.id-card-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  padding: 10px;
+.form-container button,
+#save-button {
+  margin: 20px 0;
+  padding: 5px 15px;
 }
