@@ -1,0 +1,33 @@
+.id-card-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+.id-card-image {
+  object-fit: cover;
+}
+
+.student-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.id-card-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.92 240.92">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #231f20;
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #0071bb;
+      }
+
+      .cls-6 {
+        fill: #231f20;
+        font-size: 7px;
+      }
+
+      .cls-6, .cls-4 {
+        font-family: TimesNewRomanPS-BoldMT, 'Times New Roman';
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        fill: #eab649;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-7" x=".04" y="209.42" width="155.75" height="30.5"/>
+  <rect class="cls-5" x=".04" y="210.42" width="155.75" height="30.5"/>
+  <polygon class="cls-7" points=".17 4.21 .17 106.92 155.92 79.02 155.92 4.21 .17 4.21"/>
+  <polygon class="cls-5" points="0 0 0 102.63 155.92 74.76 155.92 0 0 0"/>
+  <text class="cls-6" transform="translate(114.13 204.17)"><tspan x="0" y="0">Principal</tspan></text>
+  <rect class="cls-1" x="10.06" y="185.92" width="89.74" height="19.72"/>
+  <line class="cls-2" x1="113.79" y1="197.78" x2="143.29" y2="197.78"/>
+  <path class="cls-3" d="m18.21,12.25c7.72,5.35,7.27,17.4-1.34,21.97h138.5V12.25H18.21Z"/>
+  <text class="cls-4" transform="translate(48.79 49.81) scale(.77 1)"><tspan x="0" y="0">ID No : </tspan></text>
+  <text/>
+</svg>
