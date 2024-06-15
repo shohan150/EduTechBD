@@ -1,39 +1,77 @@
 .id-card-template {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+#svg-file-label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+#svg-file {
+  font-size: 16px;
 }
 
 .form-container {
   margin-bottom: 20px;
+  font-size: 14px;
 }
 .form-container > h4 {
+  font-size: 20px;
   margin: 25px 0;
 }
 .input-group {
   display: flex;
-  gap: 5px;
-  margin-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 20px;
+  background-color: turquoise;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .input-group h4 {
   margin: 0;
   margin-right: 20px;
+  font-size: 20px;
 }
 
-.input-group input {
-  width: 40px;
-  height: 20px;
-  margin-right: 10px;
+.input-group .forms {
+  line-height: 40px;
+}
+
+.input-group .forms label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.input-group .forms input {
+  width: 75px;
+  height: 28px;
+  border-radius: 4px;
+  margin-right: 25px;
+  border: none;
+  font-size: 17px;
+  padding: 4px;
+}
+.input-group .forms input:focus {
+  outline: none;
 }
 
 .id-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.id-card {
   position: relative;
-  width: 400px;
-  height: 600px;
+  width: 324px;
+  height: 516px;
   background-image: url("../template.svg");
   background-size: cover;
 }
@@ -45,29 +83,45 @@
 }
 
 .id-no {
-  font-weight: bold;
-  top: 28%;
-  left: 40%;
+  top: 22%;
+  left: 35%;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .student-name {
-  top: 32%;
-  left: 30%;
+  top: 26%;
+  left: 25%;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .student-image {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 85px;
+  height: 85px;
   border: 2px solid yellow;
   border-radius: 5px;
   background-color: #fff;
-  top: 40px;
+  top: 5%;
   left: 35%;
 }
 
-.form-container button,
+#update-button,
 #save-button {
-  margin: 20px 0;
-  padding: 5px 15px;
+  margin: 25px 0;
+  padding: 10px 30px;
+  background-color: turquoise;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.save {
+  display: flex;
+  justify-content: center;
 }

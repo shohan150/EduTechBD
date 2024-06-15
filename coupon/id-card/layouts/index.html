@@ -830,135 +830,198 @@ License: For each use you must have a valid license purchased only from above li
 
                     <div class="id-card-template">
                       <div>
+                        <!-- upload svg image -->
+                        <label for="svg-file" id="svg-file-label"
+                          >Upload SVG Template:</label
+                        >
+                        <input
+                          type="file"
+                          id="svg-file"
+                          name="svgFile"
+                          accept=".svg"
+                        />
+
                         <form id="id-card-form" class="form-container">
                           <h4>Configure ID Card Elements</h4>
                           <div class="input-group">
-                            <h4>ID Number Position</h4>
-                            <label for="id-no-top" class="label">Top:</label>
-                            <input
-                              type="number"
-                              id="id-no-top"
-                              name="idNoTop"
-                              min="0"
-                              required
-                            />
-                            <label for="id-no-left" class="label">Left:</label>
-                            <input
-                              type="number"
-                              id="id-no-left"
-                              name="idNoLeft"
-                              min="0"
-                              required
-                            />
-                            <label for="id-size" class="label">Size:</label>
-                            <input
-                              type="number"
-                              id="id-size"
-                              name="idNoSize"
-                              min="0"
-                              required
-                            />
-                            <label for="id-weight" class="label">Weight:</label>
-                            <input
-                              type="number"
-                              id="id-weight"
-                              name="idNoWeight"
-                              min="0"
-                              required
-                            />
+                            <h4>ID Number</h4>
+                            <div class="forms">
+                              <label for="id-no-top" class="label">Top:</label>
+                              <input
+                                type="number"
+                                id="id-no-top"
+                                name="idNoTop"
+                                min="0"
+                                max="100"
+                                value="22"
+                              />
+                              <label for="id-no-left" class="label"
+                                >Left:</label
+                              >
+                              <input
+                                type="number"
+                                id="id-no-left"
+                                name="idNoLeft"
+                                min="0"
+                                max="100"
+                                value="35"
+                              />
+                              <label for="id-size" class="label">Size:</label>
+                              <input
+                                type="number"
+                                id="id-size"
+                                name="idNoSize"
+                                min="0"
+                                value="16"
+                              />
+                              <label for="id-weight" class="label"
+                                >Weight:</label
+                              >
+                              <input
+                                type="number"
+                                id="id-weight"
+                                name="idNoWeight"
+                                min="0"
+                                value="600"
+                              />
+                              <label for="color-picker">Text Color:</label>
+                              <input
+                                type="color"
+                                name="idNoColor"
+                                value="#ffffff"
+                              />
+                            </div>
                           </div>
                           <div class="input-group">
-                            <h4>Student Name Position</h4>
-                            <label for="name-top" class="label">Top:</label>
-                            <input
-                              type="number"
-                              id="name-top"
-                              name="nameTop"
-                              min="0"
-                              required
-                            />
-                            <label for="name-left" class="label">Left:</label>
-                            <input
-                              type="number"
-                              id="name-left"
-                              name="nameLeft"
-                              min="0"
-                              required
-                            />
-                            <label for="name-size" class="label">Size:</label>
-                            <input
-                              type="number"
-                              id="name-size"
-                              name="nameSize"
-                              min="0"
-                              required
-                            />
-                            <label for="name-weight" class="label"
-                              >Weight:</label
-                            >
-                            <input
-                              type="number"
-                              id="name-weight"
-                              name="nameWeight"
-                              min="0"
-                              required
-                            />
+                            <h4>Student Name</h4>
+                            <div class="forms">
+                              <label for="name-top" class="label">Top:</label>
+                              <input
+                                type="number"
+                                id="name-top"
+                                name="nameTop"
+                                min="0"
+                                max="100"
+                                value="26"
+                              />
+                              <label for="name-left" class="label">Left:</label>
+                              <input
+                                type="number"
+                                id="name-left"
+                                name="nameLeft"
+                                min="0"
+                                max="100"
+                                value="25"
+                              />
+                              <label for="name-size" class="label">Size:</label>
+                              <input
+                                type="number"
+                                id="name-size"
+                                name="nameSize"
+                                min="0"
+                                value="14"
+                              />
+                              <label for="name-weight" class="label"
+                                >Weight:</label
+                              >
+                              <input
+                                type="number"
+                                id="name-weight"
+                                name="nameWeight"
+                                min="0"
+                                value="400"
+                              />
+                              <label for="color-picker">Text Color:</label>
+                              <input
+                                type="color"
+                                name="nameColor"
+                                value="#ffffff"
+                              />
+                            </div>
+                            </div>
                           </div>
                           <div class="input-group">
                             <h4>Image</h4>
-                            <label for="image-top" class="label">Top:</label>
-                            <input
-                              type="number"
-                              id="image-top"
-                              name="imageTop"
-                              min="0"
-                              required
-                            />
-                            <label for="image-left" class="label">Left:</label>
-                            <input
-                              type="number"
-                              id="image-left"
-                              name="imageLeft"
-                              min="0"
-                              required
-                            />
-                            <label for="image-border-width" class="label"
-                              >Border Width:</label
-                            >
-                            <input
-                              type="number"
-                              id="image-border-width"
-                              name="borderWidth"
-                              min="0"
-                              required
-                            />
-                            <label for="image-border-radius" class="label"
-                              >Border Radius:</label
-                            >
-                            <input
-                              type="number"
-                              id="image-border-radius"
-                              name="borderRadius"
-                              min="0"
-                              required
-                            />
+                            <div class="forms">
+                              <label for="image-top" class="label">Top:</label>
+                              <input
+                                type="number"
+                                id="image-top"
+                                name="imageTop"
+                                min="0"
+                                max="100"
+                                value="5"
+                              />
+                              <label for="image-left" class="label"
+                                >Left:</label
+                              >
+                              <input
+                                type="number"
+                                id="image-left"
+                                name="imageLeft"
+                                min="0"
+                                max="100"
+                                value="35"
+                              />
+
+                              <label for="image-size" class="label"
+                                >Size:</label
+                              >
+                              <input
+                                type="number"
+                                id="image-size"
+                                name="imageSize"
+                                value="85"
+                              />
+                              <label for="image-border-width" class="label"
+                                >Border Width:</label
+                              >
+                              <input
+                                type="number"
+                                id="image-border-width"
+                                name="borderWidth"
+                                min="0"
+                                max="25"
+                                value="2"
+                              />
+                              <label for="image-border-radius" class="label"
+                                >Border Radius:</label
+                              >
+                              <input
+                                type="number"
+                                id="image-border-radius"
+                                name="borderRadius"
+                                min="0"
+                                value="5"
+                              />
+                              <label for="color-picker">Border Color:</label>
+                              <input
+                                type="color"
+                                name="imageBorderColor"
+                                value="#ffff00"
+                              />
+                            </div>
                           </div>
-                          <button type="submit">Update Positions</button>
+                          <button type="submit" id="update-button">Update Positions</button>
                         </form>
 
                         <div class="id-card-container">
-                          <div class="id-info id-no">ID no: 1234</div>
-                          <div class="id-info student-name">
-                            Student Name: John Doe
+                          <div class="id-card">
+                            <div class="id-info id-no">ID no: 1234</div>
+                            <div class="id-info student-name">
+                              Student Name: John Doe
+                            </div>
+                            <img
+                              src="assets/media/avatars/300-1.jpg"
+                              alt=""
+                              class="student-image"
+                            />
                           </div>
-                          <img
-                            src="assets/media/avatars/300-1.jpg"
-                            alt=""
-                            class="student-image"
-                          />
                         </div>
 
-                        <button id="save-button">Save Design</button>
+                        <div class="save">
+                          <button id="save-button">Save Design</button>
+                        </div>
                       </div>
                     </div>
                   </div>
