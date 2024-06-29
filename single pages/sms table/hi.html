@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Table</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- 
+    <link href="./perfect-scrollbar.css" rel="stylesheet" />
+
+    <script src="./perfect-scrollbar.js"></script> -->
   </head>
   <body>
     <div class="container">
@@ -15,7 +24,7 @@
           <h4>Select All</h4>
         </div>
       </div>
-      <table>
+      <table class="">
         <thead>
           <tr>
             <th style="width: 40px"></th>
@@ -25,11 +34,10 @@
             <th>Section</th>
           </tr>
         </thead>
-        <div class="scroll">
-          <tbody id="tableBody">
-            <!-- Rows will be inserted here by JavaScript -->
-          </tbody>
-        </div>
+
+        <tbody id="tableBody" class="scrollbar">
+          <!-- Rows will be inserted here by JavaScript -->
+        </tbody>
       </table>
       <button id="showSelected">Show Selected Students</button>
     </div>
