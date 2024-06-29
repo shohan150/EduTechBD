@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="receipents">
+        <h4>Select Receipents</h4>
+        <div class="select-all-button">
+          <input type="checkbox" id="selectAll" />
+          <h4>Select All</h4>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40px"></th>
+            <th>ID</th>
+            <th style="width: 40%">Name</th>
+            <th>Class</th>
+            <th>Section</th>
+          </tr>
+        </thead>
+        <div class="scroll">
+          <tbody id="tableBody">
+            <!-- Rows will be inserted here by JavaScript -->
+          </tbody>
+        </div>
+      </table>
+      <button id="showSelected">Show Selected Students</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
