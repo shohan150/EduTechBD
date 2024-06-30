@@ -9,6 +9,10 @@
   align-items: baseline;
 }
 
+.select-all-button h4 {
+  font-size: 17px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
