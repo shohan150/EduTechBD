@@ -36,7 +36,7 @@ function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
-// Automatically advance to the next slide every 3 seconds (3000 milliseconds)
+// Automatically advance to the next slide every 3 seconds (4500 milliseconds)
 let currentInterval = setInterval(function () {
   plusSlides(1);
 }, 4500);
@@ -46,17 +46,17 @@ showSlides(slideIndex);
 
 
 for(let i=0; i<menuItem.length; i++){
-  menuItem[i].addEventListener('click', ()=>{
-     if(menuItem[i].classList[1]){
-     return;
-     } else{
-        slideIndex = i+1 ;
-        slides[i].className += " active";
-        currentSlide(slideIndex);
-        clearInterval(currentInterval);
-        currentInterval = setInterval(function () {
-           plusSlides(1);
-         }, 4500);
-     }
-  })
+   menuItem[i].addEventListener('click', ()=>{
+      if(menuItem[i].classList[1]){
+      return;
+      } else{
+         slideIndex = i+1 ;
+         slides[i].className += " active";
+         currentSlide(slideIndex);
+         clearInterval(currentInterval);
+         currentInterval = setInterval(function () {
+            plusSlides(1);
+          }, 4500);
+      }
+   })
 }
