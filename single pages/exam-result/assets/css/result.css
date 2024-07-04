@@ -68,7 +68,8 @@ h6 {
 }
 
 .result-table {
-  padding: 0 10px;
+  margin: 0 12px;
+  width: calc(100% - 24px);
 }
 
 .result-table th {
@@ -116,6 +117,7 @@ h6 {
   font-size: 17px;
   font-weight: 400;
   box-shadow: 2px 3px #999;
+  margin-top: 20px;
 }
 
 @media print {
