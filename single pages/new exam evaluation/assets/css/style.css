@@ -16,6 +16,7 @@ p {
 
 .evaluation-scale {
   border: 1px solid #e7e7ff;
+  border-radius: 4px;
 }
 .evaluation-scale h5 {
   background-color: #e7e7ff;
@@ -24,16 +25,21 @@ p {
   padding: 4px;
 }
 
+.main-scale {
+  padding: 2px 0 2px 4px;
+}
+
 .scale-fields {
-  padding-left: 4px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4px;
+  gap: 5px;
+  line-height: 01px;
 }
 
 .scale-fields .icons i {
-  font-size: 28px;
+  font-size: 13px;
+  line-height: 10px;
 }
 
 .scale-fields .value {
@@ -42,17 +48,18 @@ p {
   gap: 5px;
 }
 .scale-fields .value h6 {
-  margin-left: 25px;
+  margin-left: 20px;
+  font-size: 12px;
 }
 
 .scale-fields .value i {
-  font-size: 20px;
+  font-size: 10px;
   margin-right: 4px;
 }
 
 .scale-fields .value i.bx-checkbox-checked {
-  font-size: 28px;
-  margin-right: 0;
+  font-size: 13px;
+  margin-right: 2px;
 }
 
 .student-details p span {
@@ -90,6 +97,7 @@ p {
 
 .comment-section {
   position: relative;
+  margin-bottom: 65px;
 }
 
 .comment-section::after {
@@ -113,4 +121,16 @@ p {
   right: 0;
   width: calc(100% - 5rem);
   border-bottom: 1px solid #ddd;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20px;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    background-color: white;
+  }
 }
