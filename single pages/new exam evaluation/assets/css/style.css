@@ -8,6 +8,53 @@ p {
   margin-bottom: 0;
 }
 
+.upper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.evaluation-scale {
+  border: 1px solid #e7e7ff;
+}
+.evaluation-scale h5 {
+  background-color: #e7e7ff;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+.scale-fields {
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.scale-fields .icons i {
+  font-size: 28px;
+}
+
+.scale-fields .value {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.scale-fields .value h6 {
+  margin-left: 25px;
+}
+
+.scale-fields .value i {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.scale-fields .value i.bx-checkbox-checked {
+  font-size: 28px;
+  margin-right: 0;
+}
+
 .student-details p span {
   font-weight: 600;
   line-height: 26px;
@@ -23,4 +70,47 @@ p {
 .evaluation-table td {
   border: 1px solid #dddddd;
   border-collapse: collapse;
+  padding: 3px 0;
+}
+
+.evaluation-table .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.evaluation-table .icons i {
+  font-size: 30px;
+}
+
+.make-blue {
+  color: #1489e3;
+}
+
+.comment-section {
+  position: relative;
+}
+
+.comment-section::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: calc(100% - 5rem);
+  height: 1px;
+  background: #ddd;
+}
+
+.comment-section p {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.second-line {
+  position: absolute;
+  top: 58px;
+  right: 0;
+  width: calc(100% - 5rem);
+  border-bottom: 1px solid #ddd;
 }
