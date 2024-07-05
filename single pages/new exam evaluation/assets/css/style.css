@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+.student-details p span {
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.evaluation-table {
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+.evaluation-table,
+.evaluation-table th,
+.evaluation-table td {
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
