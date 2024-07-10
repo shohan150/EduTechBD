@@ -1,0 +1,87 @@
+.menu-header-seachbar {
+  margin-bottom: 15px;
+}
+#searchBarContainer {
+  display: none;
+}
+
+.search-bar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.search-bar:focus-within {
+  border-color: #f3c614;
+  box-shadow: 0 0 4px #5790b3;
+}
+
+.search-input {
+  flex: 1;
+  background: white;
+  color: black;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.icon-container {
+  background-color: #4a5568;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+.icon-container:hover {
+  background-color: #f3c614; /* Replace with your tertiary color */
+  box-shadow: 0 0 4px #5790b3;
+}
+
+#coverImageContainer {
+  position: relative;
+}
+.icon-wrapper {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #2d3748;
+  padding: 2px 8px;
+  border-radius: 0 0 50% 50%;
+  z-index: 10;
+  cursor: pointer;
+  transition: background-color 0.1s, box-shadow 0.1s, border 0.1s;
+}
+
+.icon-wrapper:hover {
+  background-color: #f3c614;
+  box-shadow: 0 2px 6px #5790b3;
+  border-color: #2d3748;
+}
+
+.icon-wrapper i {
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.1s;
+}
+
+.icon-wrapper:hover i {
+  transform: scale(1.1);
+}
+
+.cover-image {
+  opacity: 0.9;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
