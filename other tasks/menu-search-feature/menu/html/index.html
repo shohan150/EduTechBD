@@ -100,7 +100,7 @@
                 <i class="fa fa-angle-down"></i>
               </div>
               <img
-                src="../assets/img/avatars/1.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaa_0PFnrtnPGxEz_dm6aevePers9UtfFnWZbzOngWeSg3bH-LcS6oWqRGarazefNuNow"
                 alt="Sidebar Cover"
                 class="cover-image"
               />
@@ -118,23 +118,21 @@
               </a>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item" data-is-module="true">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-check-square"></i>
                 <div data-i18n="Attendance">Attendance Report</div>
               </a>
 
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item" data-is-sub-menu="true">
                   <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <div class="text-truncate" data-i18n="Login">
                       Student Report
                     </div>
                   </a>
                   <ul class="menu-sub">
-                    <li
-                      class="menu-item {% if '/report_student_attendance/' in request.path %}active {% endif %}"
-                    >
+                    <li class="menu-item">
                       <a href="#" class="menu-link">
                         <div
                           class="text-truncate"
@@ -163,14 +161,14 @@
               </ul>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item" data-is-module="true">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-envelope"></i>
                 <div data-i18n="Sms_report">SMS Report</div>
               </a>
 
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item" data-is-sub-menu="true">
                   <a href="#" class="menu-link">
                     <div data-i18n="purchase_history">Purchase History</div>
                   </a>
@@ -178,18 +176,18 @@
               </ul>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item" data-is-module="true">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-calendar"></i>
                 <div data-i18n="Academic_Events">Academic Events</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
+                <li class="menu-item" data-is-sub-menu="true">
                   <a href="" class="menu-link">
                     <div data-i18n="Events">Events</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item" data-is-sub-menu="true">
                   <a href="" class="menu-link">
                     <div data-i18n="Event_List">Event List</div>
                   </a>
@@ -197,6 +195,8 @@
               </ul>
             </li>
           </ul>
+
+          <ul class="menu-searched-inner"></ul>
         </aside>
         <!-- / Menu -->
 
