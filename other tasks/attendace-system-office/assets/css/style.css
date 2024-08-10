@@ -24,7 +24,7 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -33,8 +33,41 @@
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px 0 2px;
+  padding: 15px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .icon {
+  border-right: 2px solid #6a7c8e65;
+  flex: 1;
+  padding-right: 5px;
+}
+
+.card i {
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 100%;
+  color: white;
+}
+
+.card .info {
+  width: 50%;
+  margin-left: 15px;
   text-align: center;
+}
+
+.card h5 {
+  margin: 0;
+  line-height: 25px;
+}
+
+.card h4 {
+  margin: 0;
+  line-height: 35px;
+  padding-top: 4px;
 }
 
 .section-heading {
@@ -43,10 +76,33 @@
   margin-bottom: 6px;
 }
 
+.leave-list {
+  background-color: white;
+  border-radius: 8px;
+  padding-bottom: 16px;
+}
+
+.leave-list h4 {
+  margin-bottom: 14px;
+}
+
+.leave-list table {
+  margin: 0 8px !important;
+}
+
+.leave-list .list-table {
+  height: 240px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f0f0f0;
+  margin: 0;
+}
+
 .late-overview {
   display: grid;
   grid-template-columns: auto auto;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .most-lates,
@@ -84,7 +140,7 @@
 }
 
 .today-attendance {
-  height: 360px;
+  height: 328px;
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #ccc #f0f0f0;
@@ -116,25 +172,25 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .attendance-container {
     flex-direction: column;
   }
   .right {
     width: 100%;
   }
+  .late-overview {
+    grid-template-columns: auto;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 1020px) {
   .card-container {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
-}
 
-/* Responsive adjustments */
-@media (max-width: 1400px) {
-  .late-overview {
-    grid-template-columns: auto;
+  .today-attendance {
+    height: 525px;
   }
 }
