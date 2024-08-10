@@ -14,9 +14,12 @@
 }
 
 .right {
-  min-width: 360px;
-  background-color: white;
+  min-width: 25%;
+  width: 360px;
+  align-self: flex-start;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
+  height: auto;
 }
 
 .card-container {
@@ -37,6 +40,7 @@
 .section-heading {
   padding: 10px;
   border-bottom: 1px solid #6a7c8e65;
+  margin-bottom: 6px;
 }
 
 .late-overview {
@@ -51,9 +55,73 @@
   border-radius: 8px;
 }
 
+.data-table table {
+  border-collapse: collapse;
+  width: calc(100% - 16px);
+  margin: 14px 8px;
+}
+
+.data-table td,
+.data-table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.data-table th {
+  text-align: center;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #dddddd70;
+}
+
+.data-table tbody img {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.today-attendance {
+  height: 360px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f0f0f0;
+}
+
+.today-attendance > div:nth-child(even) {
+  background-color: #dddddd70;
+}
+
+.employee-card {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #6a7c8e65;
+}
+
+.employee-card img {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+}
+
+.employee-card .details {
+  flex: 1;
+}
+
+.employee-card .details h6 {
+  line-height: 18px;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .attendance-container {
     flex-direction: column;
+  }
+  .right {
+    width: 100%;
   }
 }
 
