@@ -18,9 +18,15 @@ tabList.addEventListener('click', (event) => {
   }
 
 
+  formSearching();
   
+});
+
+formSearching();
+
 //form column based search feature
-const studentTableBody = document.querySelector('.active .student-table tbody');
+function formSearching() {
+   const studentTableBody = document.querySelector('.active .student-table tbody');
 const formSearchFields = document.querySelectorAll('.active .student-table thead th input');
 const studentData = document.querySelectorAll('.active .student-table tbody tr');
 
@@ -41,14 +47,32 @@ formSearchFields.forEach(formSearchField =>
       })
    })
 )
+}
 
-});
 
-// Download table data as PDF
+// download pdf button
 document.getElementById('download-pdf').addEventListener('click', () => {
    const { jsPDF } = window.jspdf;
    const doc = new jsPDF();
 
+   // Set the school name and subtitle
+   const schoolName = "Ideal School and College"; 
+   const subtitle = "Student Information";
+
+   // Set font size and color
+   doc.setFontSize(18);
+   doc.setTextColor(40, 40, 40); // Dark gray color
+
+   // Center align the text by calculating the width of the page
+   const pageWidth = doc.internal.pageSize.getWidth();
+   doc.text(schoolName, pageWidth / 2, 20, { align: 'center' });
+
+   // Set font size and color for the subtitle
+   doc.setFontSize(14);
+   doc.setTextColor(100, 100, 100); // Lighter gray color
+   doc.text(subtitle, pageWidth / 2, 30, { align: 'center' });
+
+   // Fetching the table data
    const table = document.querySelector('.tab-panel.active table.student-table');
    const rows = table.rows;
    let content = [];
@@ -62,13 +86,18 @@ document.getElementById('download-pdf').addEventListener('click', () => {
        content.push(rowContent);
    }
 
+   // Add the table after the header text
    doc.autoTable({
+       startY: 40, // Start after the header text
        head: [content[0]],
        body: content.slice(1),
    });
 
+   // Save the generated PDF
    doc.save('table-data.pdf');
 });
+
+
 
 // Download table data as Excel
 document.getElementById('download-excel').addEventListener('click', () => {
