@@ -40,10 +40,17 @@ iframe.youtube-headmaster {
   z-index: 0;
 }
 
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .right-section h1 {
   font-size: 2rem;
   color: #333;
   margin-bottom: 10px;
+  line-height: 20px;
 }
 
 .right-section p {
@@ -52,6 +59,7 @@ iframe.youtube-headmaster {
 }
 
 .right-section button {
+  width: fit-content;
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
