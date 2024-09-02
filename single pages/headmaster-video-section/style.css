@@ -87,3 +87,9 @@ iframe.youtube-headmaster {
     height: 320px;
   }
 }
+
+@media (max-width: 420px) {
+  iframe {
+    height: 240px;
+  }
+}
