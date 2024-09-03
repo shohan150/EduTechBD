@@ -1,0 +1,82 @@
+.table-container {
+  overflow-x: scroll;
+}
+
+p.tips span {
+  color: blue;
+}
+
+#editable-table {
+  width: 100%;
+  border-collapse: collapse; /* Merge borders */
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  min-width: 65px;
+}
+
+td.medium {
+  min-width: 100px;
+}
+
+td.large {
+  min-width: 160px;
+}
+
+th {
+  background-color: #004080;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+}
+
+.update-button {
+  width: 120px;
+  margin: 10px 20px 0 auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}
