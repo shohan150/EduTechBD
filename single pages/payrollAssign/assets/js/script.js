@@ -5,9 +5,12 @@ document.getElementById('select-all').addEventListener('change', function() {
    const isEditing = this.checked;
 
    checkboxes.forEach(checkbox => {
+    //if a particular field is already in editing mode and select-all again tries to make it into edit mode, then that field will fail to take value from tablefield and place that on input field. because the field contains input field now not data. that why double edit mode conversion is to be stopped. 
+    if(!(checkbox.checked && isEditing)){
        checkbox.checked = isEditing;
        const row = checkbox.closest('tr');
        toggleEditMode(row, isEditing);
+    }
    });
 });
 
