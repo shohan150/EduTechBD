@@ -24,6 +24,12 @@ body {
   transition: transform 0.2s;
 }
 
+.subject p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
 .subject:hover {
   transform: scale(1.04);
 }

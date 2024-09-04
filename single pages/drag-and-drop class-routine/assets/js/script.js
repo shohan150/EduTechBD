@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scheduleContainer = document.getElementById("schedule");
   const saveButton = document.getElementById("save-button");
 
+  //take the number of periods or columns and create new routine.
   periodForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const numPeriods = document.getElementById("num-periods").value;
@@ -20,15 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const days = [ "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
     scheduleContainer.style.gridTemplateColumns = `100px repeat(${numPeriods}, 1fr)`;
 
-    const headerRow = document.createElement("div");
-    headerRow.classList.add("header");
-    scheduleContainer.appendChild(headerRow); // Empty cell at the top-left
+    const emptyHeader = document.createElement("div");
+    emptyHeader.classList.add("header");
+    scheduleContainer.appendChild(emptyHeader); // Empty cell at the top-left
 
     //period sequence at the top
     for (let i = 1; i <= numPeriods; i++) {
       const header = document.createElement("div");
       header.classList.add("header");
-      header.innerText = `${i} Period`;
+      header.innerText = `Period ${i}`;
       scheduleContainer.appendChild(header);
     }
 
