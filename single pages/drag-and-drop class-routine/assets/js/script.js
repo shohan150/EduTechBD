@@ -34,11 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     //row for each achool day. 
-    days.forEach((day) => {
+    days.forEach((day, index) => {
       //day name at first
       const dayLabel = document.createElement("div");
       dayLabel.classList.add("day-label");
-      dayLabel.innerText = day;
+      const copyIcon = "<i class='bx bx-copy'></i>";
+      const pasteIcon = "<i class='bx bx-paste'></i>";
+      dayLabel.innerHTML = day;
+      dayLabel.innerHTML += copyIcon;
+      dayLabel.innerHTML += pasteIcon;
       scheduleContainer.appendChild(dayLabel);
 
       //then for each day create empty period field. then add the period field to scheduleContainer
@@ -78,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
  //uses the dataTransfer property of the event object (e.dataTransfer). This object allows to set and retrieve data associated with the drag operation.
  
   function dragStart(e) {
-    e.dataTransfer.setData("text/plain", e.target.innerText);
+    e.dataTransfer.setData("text/plain", e.target.innerHTML);
   }
 
   //dragOver and dragLeave combinely, gives a hover like effect. That when the content is put over, the border becomes blue. 
@@ -108,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //create e new div and place the div on the period block.
     const clonedSubject = document.createElement("div");
     clonedSubject.className = "subject";
-    clonedSubject.innerText = text;
+    clonedSubject.innerHTML = text;
     e.currentTarget.innerHTML = ""; // Clear existing content
     const deleteButton = document.createElement("button");
     deleteButton.className = "delete";
