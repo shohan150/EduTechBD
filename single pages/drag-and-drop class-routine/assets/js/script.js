@@ -38,11 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       //day name at first
       const dayLabel = document.createElement("div");
       dayLabel.classList.add("day-label");
-      const copyIcon = "<i class='bx bx-copy'></i>";
-      const pasteIcon = "<i class='bx bx-paste'></i>";
       dayLabel.innerHTML = day;
-      dayLabel.innerHTML += copyIcon;
-      dayLabel.innerHTML += pasteIcon;
+      dayLabel.innerHTML += "<i class='bx bx-copy'></i>";
+      dayLabel.innerHTML += "<i class='bx bx-paste'></i>";
       scheduleContainer.appendChild(dayLabel);
 
       //then for each day create empty period field. then add the period field to scheduleContainer
@@ -65,7 +63,33 @@ document.addEventListener("DOMContentLoaded", () => {
         //finally add each period field to the scheduleContainer
         scheduleContainer.appendChild(period);
       }
+      
+      const copyIcons = document.querySelectorAll ('.day-label i.bx-copy');
+
+      const singleDayPeriods = document.querySelectorAll(`div.period:nth-last-of-type(-n+${numPeriods})`);
+
+      copyPasteFeature(Number(numPeriods), index, copyIcons, singleDayPeriods);
+
     });
+  }
+
+  function copyPasteFeature (numPeriods, index, copyIcons, singleDayPeriods) {
+    const copyIcon = copyIcons[index];
+    copyIcon.addEventListener('click', () => {
+      const pasteIcons = document.querySelectorAll ('.day-label i.bx-paste');
+      pasteIcons.forEach((pasteIcon, index) =>
+        pasteIcon.addEventListener('click', () => {
+        const allPeriods =  document.querySelectorAll(`div.period`);
+        for (let i = 0; i < numPeriods; i++) {
+         allPeriods[numPeriods*index + i].innerHTML = singleDayPeriods[i].innerHTML;
+
+         allPeriods[numPeriods*index + i].querySelector(".delete").addEventListener("click", deleteContent);
+        }
+      }))
+      
+
+    })
+
   }
 
   subjects.forEach((subject) => {
