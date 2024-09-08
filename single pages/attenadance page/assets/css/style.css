@@ -1,0 +1,115 @@
+.table-container {
+  overflow-x: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 4px 6px;
+  text-align: center;
+  min-width: 30px;
+}
+
+#attendance-table thead tr th:first-child {
+  text-align: start !important;
+}
+
+.student-name {
+  text-align: start;
+  white-space: nowrap;
+}
+
+.present,
+.absent,
+.leave {
+  color: white;
+  border: 1px solid gray;
+}
+
+.present {
+  background-color: rgb(54, 192, 54);
+}
+
+.absent {
+  background-color: rgb(193, 47, 47);
+}
+
+.leave {
+  background-color: rgb(170, 168, 168);
+}
+
+.table-info {
+  display: flex;
+  gap: 40px;
+}
+
+.section-info {
+  margin-bottom: 25px;
+}
+.section-info h6 {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.overview-chart {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  height: 140px;
+}
+
+#print-stat {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: fit-content;
+}
+
+#print-stat:hover {
+  background-color: #0069d9;
+}
+
+@media only screen and (max-width: 576px) {
+  .table-info {
+    display: block;
+  }
+  .overview-chart {
+    justify-content: center;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 landscape; /* Set page size to A4 landscape */
+    margin: 15px;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    background-color: white;
+  }
+
+  table,
+  th,
+  td {
+    padding: 3px;
+    min-width: 20px;
+  }
+  .present {
+    background-color: rgba(0, 0, 0, 0.38);
+  }
+  .absent {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  .leave {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
