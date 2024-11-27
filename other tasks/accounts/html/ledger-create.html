@@ -49,6 +49,125 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+
+
+    <style>
+      .container {
+          background-color: white;
+          border-radius: 0.375rem;
+          padding: 1rem;
+          margin: 1rem 0;
+      }
+      .header {
+          font-size: 1.5rem;
+          font-weight: 500;
+      }
+      .form-grid {
+          margin-top: 1rem;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+      }
+      @media (min-width: 640px) {
+          .form-grid {
+              grid-template-columns: repeat(3, 1fr);
+          }
+      }
+      .space-y-2 > * + * {
+          margin-top: 0.5rem;
+      }
+      .input, .select {
+        background-color: #f7fafc; 
+        width: 100%;
+        border-radius: 0.375rem;
+        padding: 0.5rem;
+        border: 1px solid #cbd5e0; 
+        outline: none;
+      }
+      .input:focus, .select:focus {
+          border-color: #3182ce; 
+      }
+      .button {
+        border-radius: 0.375rem;
+        margin-top: 1rem;
+        width: 11rem;
+        padding: 0.5rem;
+        background-color: #3182ce; 
+        color: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.2s, transform 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border: none;
+      }
+      .button:hover {
+          background-color: #2b6cb0; 
+          transform: translateY(-0.125rem);
+      }
+      .text-center {
+          text-align: center;
+      }
+      .mt-7 {
+          margin-top: 1.75rem;
+      }
+      .search-input {
+          display: block;
+          width: 100%;
+          background-color: white;
+          border: 1px solid #cbd5e0;
+          padding: 0.5rem 1rem;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          outline: none;
+      }
+      .search-input:focus {
+          border-color: #3182ce;
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      }
+      .table-container {
+          border: 1px solid #e2e8f0;
+          margin: 1.5rem 0;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .table {
+          width: 100%;
+          color: #4a5568; /* text-textGray */
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+      }
+      .table th, .table td {
+          padding: 0.5rem;
+          text-align: center;
+      }
+      .table thead {
+          border-bottom: 2px solid #e2e8f0;
+          background-color: #ebf8ff; /* bg-bgBlue */
+      }
+      .table tbody tr {
+          border-bottom: 1px solid #e2e8f0;
+      }
+      .action-button {
+          background-color: #4299e1; /* bg-blue */
+          padding: 0.25rem 0.75rem;
+          border: none;
+          border-radius: 4px;
+          color: white;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s;
+          font-size: 0.875rem;
+          margin: 0.25rem;
+      }
+      .action-button:hover {
+          transform: translateY(-0.125rem);
+      }
+      .action-button-red {
+          background-color: #f56565; /* bg-red */
+      }
+  </style>
+
   </head>
 
   <body>
@@ -159,148 +278,79 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <h4 class="py-3 mb-4">
-                <span class="text-muted fw-light">Exam/</span> Seat plan
+                <span class="text-muted fw-light">Exam/</span> Ledger Create
               </h4>
 
               <!-- Basic Layout -->
               <div class="row">
-                <!-- Admit card section -->
-                <div id="cards">
-                  <div id="admit-card">
-                    <!-- header -->
-                    <div class="school-info">
-                      <div class="school-info2">
-                        <h3 class="school-name">ABCD Primary School</h3>
-                        <h6 class="school-details">Mirpur-11, Dhaka</h6>
-                        <h6 class="school-details">Phone No: 123456789</h6>
+                <div class="container">
+                  <h3 class="header">Ledger Create</h3>
+                  <form>
+                      <div class="form-grid">
+                          <div class="space-y-2">
+                              <label>Select Category</label>
+                              <select class="select" name="select_category" id="select_category">
+                                  <option value="0">Select Category</option>
+                                  <option value="Fixed Asset">Fixed Asset</option>
+                                  <option value="Cash & Cash Equivalance">Cash & Cash Equivalance</option>
+                                  <option value="Account Recievable">Account Recievable</option>
+                                  <option value="OFPS Account">OFPS Account</option>
+                                  <option value="Long Term Liability">Long Term Liability</option>
+                                  <option value="Short Term Liability">Short Term Liability</option>
+                                  <option value="Owner's Equity">Owner's Equity</option>
+                                  <option value="Account Payable">Account Payable</option>
+                                  <option value="Regular Income">Regular Income</option>
+                                  <option value="Others Income">Others Income</option>
+                                  <option value="Regular Expense">Regular Expense</option>
+                                  <option value="Others Expense">Others Expense</option>
+                                  <option value="General Expense">General Expense</option>
+                              </select>
+                          </div>
+                          <div class="space-y-2">
+                              <label>Ledger Name</label>
+                              <input class="input" placeholder="Ledger Name" name="ledger_name" id="ledger_name" type="text" />
+                          </div>
+                          <div class="space-y-2">
+                              <label>Write Note</label>
+                              <input class="input" placeholder="Write Note" name="write_note" id="write_note" type="text" />
+                          </div>
                       </div>
-                    </div>
-                    <div class="school-logo">
-                      <img
-                        src="https://img.freepik.com/premium-vector/school-logo-design_706452-12.jpg?w=740"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-
-                    <!-- admit card data -->
-                    <div class="info">
-                      <!-- student data -->
-                      <div class="student-info">
-                        <div class="d-flex">
-                          <p>Student Name:</p>
-                          <p class="field"></p>
-                        </div>
-                        <div class="d-flex">
-                          <div class="d-flex half">
-                            <p>Class:</p>
-                            <p class="field"></p>
-                          </div>
-                          <div class="d-flex half">
-                            <p>Roll No.:</p>
-                            <p class="field"></p>
-                          </div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="d-flex half">
-                            <p>Section:</p>
-                            <p class="field"></p>
-                          </div>
-                          <div class="d-flex half">
-                            <p>Session:</p>
-                            <p class="field"></p>
-                          </div>
-                        </div>
-                        <div class="d-flex">
-                          <p>Exam Time:</p>
-                          <p class="field"></p>
-                        </div>
+                      <div class="flex justify-end">
+                          <button type="submit" class="button">Save</button>
                       </div>
-
-                      <!-- student photo and principle signature -->
-                      <div class="student-photo">
-                        <div class="photo-box">Photo</div>
-                        <div class="signature">
-                          <p>Principle Signature</p>
-                        </div>
+                  </form>
+                  <h3 class="header text-center mt-7">General Ledger List</h3>
+                  <div class="flex justify-end mt-2">
+                      <div class="inline-block relative w-44">
+                          <input placeholder="search here..." type="text" class="search-input" />
                       </div>
-                    </div>
-
-                    <!-- footer and left sidebar -->
-                    <div class="exam-card">Exam Admit Card</div>
-                    <div class="school-email">www.demo-mail.com</div>
                   </div>
-
-                  <!-- repeated admit card -->
-                  <div id="admit-card">
-                    <!-- header -->
-                    <div class="school-info">
-                      <div class="school-info2">
-                        <h3 class="school-name">ABCD Primary School</h3>
-                        <h6 class="school-details">Mirpur-11, Dhaka</h6>
-                        <h6 class="school-details">Phone No: 123456789</h6>
-                      </div>
-                    </div>
-                    <div class="school-logo">
-                      <img
-                        src="https://img.freepik.com/premium-vector/school-logo-design_706452-12.jpg?w=740"
-                        alt=""
-                        srcset=""
-                      />
-                    </div>
-
-                    <!-- admit card data -->
-                    <div class="info">
-                      <!-- student data -->
-                      <div class="student-info">
-                        <div class="d-flex">
-                          <p>Student Name:</p>
-                          <p class="field"></p>
-                        </div>
-                        <div class="d-flex">
-                          <div class="d-flex half">
-                            <p>Class:</p>
-                            <p class="field"></p>
-                          </div>
-                          <div class="d-flex half">
-                            <p>Roll No.:</p>
-                            <p class="field"></p>
-                          </div>
-                        </div>
-                        <div class="d-flex">
-                          <div class="d-flex half">
-                            <p>Section:</p>
-                            <p class="field"></p>
-                          </div>
-                          <div class="d-flex half">
-                            <p>Session:</p>
-                            <p class="field"></p>
-                          </div>
-                        </div>
-                        <div class="d-flex">
-                          <p>Exam Time:</p>
-                          <p class="field"></p>
-                        </div>
-                      </div>
-
-                      <!-- student photo and principle signature -->
-                      <div class="student-photo">
-                        <div class="photo-box">Photo</div>
-                        <div class="signature">
-                          <p>Principle Signature</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- footer and left sidebar -->
-                    <div class="exam-card">Exam Admit Card</div>
-                    <div class="school-email">www.demo-mail.com</div>
+                  <div class="table-container">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th>serial</th>
+                                  <th>ledger name</th>
+                                  <th>category</th>
+                                  <th>debit credit</th>
+                                  <th>actions</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <!-- Example row, replace with dynamic content -->
+                              <tr>
+                                  <td>1</td>
+                                  <td>Example Ledger</td>
+                                  <td>Example Category</td>
+                                  <td>Example Debit/Credit</td>
+                                  <td>
+                                      <button class="action-button">edit</button>
+                                      <button class="action-button action-button-red">delete</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
                   </div>
-                </div>
-              </div>
-              <!-- print button -->
-              <div class="button_area">
-                <button id="print_admitCard">Print Admit Card</button>
               </div>
             </div>
             <!--  Content -->
@@ -353,19 +403,5 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.2/jQuery.print.min.js"
-      integrity="sha512-t3XNbzH2GEXeT9juLjifw/5ejswnjWWMMDxsdCg4+MmvrM+MwqGhxlWeFJ53xN/SBHPDnW0gXYvBx/afZZfGMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      $("#print_admitCard").on("click", function () {
-        $("#cards").print({
-          title: "SeatPlan",
-          doctype: "<!doctype html>",
-        });
-      });
-    </script>
   </body>
 </html>
