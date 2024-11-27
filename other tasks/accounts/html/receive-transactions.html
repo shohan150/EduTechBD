@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>School Layout</title>
+
+    <meta name="description" content="" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/css/admit-card.css" />
+
+    <!--Page CSS --/>
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+
+    <style>
+      .container {
+          background-color: white;
+          border-radius: 0.375rem;
+          padding: 1rem;
+          margin: 1rem 0;
+      }
+      .title {
+          font-size: 1.5rem;
+          font-weight: 500;
+          text-align: center;
+      }
+      .table-container {
+          border: 1px solid #e2e8f0;
+          margin: 1.5rem 0;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      table {
+          width: 100%;
+          color: #4a5568;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+      }
+      thead {
+          border-bottom: 2px solid #bee3f8;
+          background-color: #ebf8ff;
+      }
+      th, td {
+          padding: 0.5rem;
+          text-align: center;
+      }
+      .form-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+          margin-top: 1rem;
+      }
+      .form-grid.sm {
+          grid-template-columns: repeat(4, 1fr);
+      }
+      .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+      }
+      .input, .select, .textarea {
+          width: 100%;
+          background-color: white;
+          border: 1px solid #cbd5e0;
+          padding: 0.5rem;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      .input:focus, .select:focus, .textarea:focus {
+          border-color: #3182ce;
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+          outline: none;
+      }
+      .button {
+          background-color: #3182ce;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.2s, transform 0.2s;
+          border: none;
+      }
+      .button:hover {
+          background-color: #2b6cb0;
+          transform: translateY(-0.125rem);
+      }
+      .form-group.description {
+         margin: 20px 0;
+      }
+
+      .submit-button {
+          background-color: #3182ce;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 0.375rem;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.2s, transform 0.2s;
+          border: none;
+          width: 150px;
+      }
+      .submit-button:hover {
+          background-color: #2b6cb0;
+          transform: translateY(-0.125rem);
+      }
+
+      .submit-button-container {
+          display: flex;
+          justify-content: end;
+          margin-top: 10px;
+      }
+  </style>
+
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-text demo menu-text fw-bold ms-2"
+                >School</span
+              >
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
+            >
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboards -->
+
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <div data-i18n="Vertical Form">Dashboard</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none ps-1 ps-sm-2"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+
+                <!-- User -->
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="../assets/img/avatars/1.png"
+                        alt
+                        class="w-px-40 h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-fluid flex-grow-1 container-p-y">
+              <h4 class="py-3 mb-4">
+                <span class="text-muted fw-light">Exam/</span> Voucher Delete
+              </h4>
+
+              <!-- Basic Layout -->
+              <div class="row">
+               <div class="container">
+                  <h3 class="title">Receive Transaction</h3>
+                  <div class="table-container">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Received From</th>
+                                  <th>Amount</th>
+                                  <th>Actions</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <!-- Example row, repeat as necessary -->
+                              <tr>
+                                  <td>
+                                      <select class="select">
+                                          <option value="0">Select Ledger</option>
+                                          <option value="Fixed Asset">Fixed Asset</option>
+                                          <!-- More options... -->
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <input type="text" class="input" placeholder="Amount">
+                                  </td>
+                                  <td>
+                                      <button class="button">Delete</button>
+                                  </td>
+                              </tr>
+                              <!-- Add more rows as needed -->
+                          </tbody>
+                      </table>
+                  </div>
+              
+                  <hr>
+              
+                  <h3 class="title">Receive Transaction Form</h3>
+                  <form>
+                      <div class="form-grid">
+                          <div class="form-group">
+                              <label>Total</label>
+                              <input type="text" class="input" placeholder="Amount">
+                          </div>
+                          <div class="form-group">
+                              <label>Receive Date</label>
+                              <input type="date" class="input">
+                          </div>
+                          <div class="form-group">
+                              <label>Voucher No</label>
+                              <input type="text" class="input" placeholder="Amount">
+                          </div>
+                          <div class="form-group">
+                              <label>Select Ledger</label>
+                              <select class="select">
+                                  <option value="0">Select Ledger</option>
+                                  <option value="Fixed Asset">Fixed Asset</option>
+                                  <!-- More options... -->
+                              </select>
+                          </div>
+                      </div>
+              
+                     <div class="form-group description">
+                        <label>Description</label>
+                        <textarea class="textarea" rows="4"></textarea>
+                     </div>
+                     <div class="submit-button-container">
+                        <button type="submit" class="submit-button">Save</button>
+                     </div>
+                  </form>
+              </div>
+              
+            </div>
+            <!--  Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div
+                class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column"
+              >
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  , made with ❤️ by Desinner Bee
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
