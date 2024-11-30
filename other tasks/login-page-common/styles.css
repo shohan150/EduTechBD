@@ -1,0 +1,217 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section: Login */
+.login-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo-img {
+  max-width: 220px;
+}
+
+/* Login Title */
+.login-title {
+  color: #1a4f27;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form {
+  width: 65%;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #e9ffe8;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-group input {
+  border: none;
+  background: none;
+  flex: 1;
+  margin-left: 10px;
+  font-size: 15px;
+  padding: 4px;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  display: block;
+  margin: 20px auto;
+  width: 125px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #1a4f27e0, #1a4f27);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.02);
+}
+
+.other-login {
+  margin: 20px 0 10px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+/* Social Login Buttons */
+.social-login {
+  width: 100%;
+  text-align: center;
+}
+
+.social-login button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.social-login button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.google-button {
+  color: #db4437;
+  border-color: #db4437;
+}
+
+.google-button:hover {
+  background-color: rgba(219, 68, 55, 0.1);
+}
+
+.facebook-button {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.facebook-button:hover {
+  background-color: rgba(59, 89, 152, 0.1);
+}
+
+/* Right Section: Info */
+.info-section {
+  flex: 1;
+  background-image: url("./assets/Green_BG.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.welcome-card {
+  text-align: center;
+  width: 50%;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-card img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.action-buttons img {
+  width: 140px;
+  height: 40px;
+}
+
+.action-buttons button:hover {
+  background-color: #145b1e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .login-section,
+  .info-section {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-form {
+    width: 80%;
+  }
+
+  .welcome-card {
+    width: 65%;
+    margin: 40px auto;
+  }
+}
