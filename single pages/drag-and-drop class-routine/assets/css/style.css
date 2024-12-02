@@ -13,7 +13,7 @@ body {
 }
 
 .subject {
-  min-width: 100px;
+  min-width: 85px;
   padding: 5px 10px;
   background-color: #007bff;
   border: 1px solid #0056b3;
@@ -181,6 +181,10 @@ body {
 }
 
 @media print {
+  @page {
+    size: landscape;
+    margin: 20px;
+  }
   body * {
     visibility: hidden;
   }
@@ -201,5 +205,6 @@ body {
   .header,
   .day-label {
     min-width: 65px;
+    color: black;
   }
 }
