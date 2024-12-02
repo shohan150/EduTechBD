@@ -49,3 +49,14 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
+@media print {
+  @page {
+    size: landscape;
+    margin: 20px;
+  }
+
+  table th {
+    color: black;
+  }
+}
