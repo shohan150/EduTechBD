@@ -1,0 +1,34 @@
+.employee-container {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.employee-container h4 {
+  width: 150px;
+  margin-right: 20px;
+}
+.progress-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 25px;
+  border: 1px solid #ccc;
+}
+.progress-segment {
+  width: 10%;
+}
+.present {
+  background-color: rgb(43, 219, 70) !important;
+}
+.absent {
+  background-color: rgba(255, 0, 0, 0.824) !important;
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 25px;
+  }
+
+  /* background color may not be visible if background graphics is turned off in print settings in browser. */
+}
