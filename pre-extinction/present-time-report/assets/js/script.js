@@ -1,9 +1,9 @@
 const employeeReports = [
-   { name: "Jalil Raihan", report: [4.2, 0.2, 2, 2, 1] },
-   { name: "Maya Khan", report: [3, 2, 3, 1, 1] },
-   { name: "Rahim Ali", report: [5, 1, 2, 1, 1] },
-   { name: "Sara Jahan", report: [2, 3, 2, 2, 1] },
-   { name: "Omar Faruk", report: [4, 2, 1, 2, 1] }
+   { name: "Jalil Raihan", report: [4.2, 0.6, 2, 2, 2.8] },
+   { name: "Maya Khan", report: [3.5, 2.58, 3.12, 4.79, 1.43] },
+   { name: "Rahim Ali", report: [5.2, 1.5, 2, 1.67, 0.35] },
+   { name: "Sara Jahan", report: [2.1, .32, 2.3, 1.2, 1] },
+   { name: "Omar Faruk", report: [4.1, 1.84, 2.51, 2.7, 1.7] }
 ];
 
 const container = document.getElementById('employeeProgress');
@@ -17,7 +17,7 @@ employeeReports.forEach(employee => {
    employeeDiv.appendChild(nameElement);
 
    const progressBar = document.createElement('div');
-   progressBar.className = 'progress-bar';
+   progressBar.className = 'duration-bar';
 
    let totalHours = 0;
    let usedWidthPercentage = 0;
@@ -27,17 +27,26 @@ employeeReports.forEach(employee => {
 
    employee.report.forEach((hours, index) => {
     const ratio = Math.round((hours / totalHours) * 100);
+    const upperSegment = document.createElement('div');
     const segment = document.createElement('div');
-    segment.className = 'progress-segment ' + (index % 2 === 0 ? 'present' : 'absent');
+    upperSegment.className = 'progress-segment'
+    segment.className = (index % 2 === 0 ? 'present' : 'absent');
+
     if(index === employee.report.length -1){
-      segment.style.width = `${100 - usedWidthPercentage}%`;
+      upperSegment.style.width = `${100 - usedWidthPercentage}%`;
     }else{
-      segment.style.width = `${ratio}%`;
+      upperSegment.style.width = `${ratio}%`;
       usedWidthPercentage += ratio;
     }
+
     const timeText = getTimeText(hours);
-    if(ratio>=10) segment.innerText = timeText;
-    progressBar.appendChild(segment);
+    if(ratio>=5) {segment.innerText = timeText;} else{
+      segment.innerText = '!';
+    }
+
+    upperSegment.setAttribute('data-time', timeText);
+    upperSegment.appendChild(segment);
+    progressBar.appendChild(upperSegment);
    });
 
    employeeDiv.appendChild(progressBar);
@@ -47,13 +56,6 @@ employeeReports.forEach(employee => {
 function getTimeText(hours) {
     const wholeHours = Math.floor(hours);
     const minutes = Math.round((hours - wholeHours) * 60);
-
-    // // Construct the time text
-    // const hourText = wholeHours === 1 ? 'hour' : 'hours';
-    // const minuteText = minutes === 1 ? 'minute' : 'minutes';
-
-    // return `${wholeHours} ${hourText} and ${minutes} ${minuteText}`;
-
 
     let text = '';
     if (wholeHours > 0) {
