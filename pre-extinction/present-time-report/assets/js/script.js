@@ -36,7 +36,7 @@ employeeReports.forEach(employee => {
       usedWidthPercentage += ratio;
     }
     const timeText = getTimeText(hours);
-    segment.innerText = timeText;
+    if(ratio>=10) segment.innerText = timeText;
     progressBar.appendChild(segment);
    });
 
@@ -45,6 +45,26 @@ employeeReports.forEach(employee => {
 });
 
 function getTimeText(hours) {
-  const hoursText = hours === 1 ? 'hour' : 'hours';
-  return `${hours} ${hoursText}`;
+    const wholeHours = Math.floor(hours);
+    const minutes = Math.round((hours - wholeHours) * 60);
+
+    // // Construct the time text
+    // const hourText = wholeHours === 1 ? 'hour' : 'hours';
+    // const minuteText = minutes === 1 ? 'minute' : 'minutes';
+
+    // return `${wholeHours} ${hourText} and ${minutes} ${minuteText}`;
+
+
+    let text = '';
+    if (wholeHours > 0) {
+        text += `${wholeHours}hr `;
+    }
+
+    if (minutes > 0) {
+        text += `${minutes}m`;
+    }
+
+    // Trim any staring, traing space
+    return text.trim();
 }
+

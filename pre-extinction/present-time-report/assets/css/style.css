@@ -1,6 +1,16 @@
+#employeeProgress {
+  min-width: 720px;
+  overflow-x: scroll;
+}
 .employee-container {
   margin-bottom: 20px;
   display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .employee-container {
+    display: block;
+  }
 }
 
 .employee-container h4 {
