@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div class="invoice-container">
+      <div class="header">
+        <img
+          src="https://logopond.com/logos/85ceed5bd07882e91ed7d02b8fa81830.png"
+          alt="Logo"
+        />
+        <h1>Payment Invoice</h1>
+      </div>
+      <div class="order-info">
+        <div><strong>Order ID:</strong> #1130833</div>
+        <div><strong>Invoice No:</strong> 1130833</div>
+        <div><strong>Order Date:</strong> 26/08/2024</div>
+        <div><strong>Invoice Date:</strong> 26/08/2024</div>
+      </div>
+
+      <div class="info">
+        <div>
+          <strong>Bill From</strong>
+          Arogga Limited<br />
+          09610016778<br />
+          <a href="#">www.medicine.com</a><br />
+        </div>
+        <div>
+          <strong>Billed To (B2B)</strong>
+          Akash Data<br />
+          +8801792312317<br />
+          Darussalam Market, Kazi Office Market, Hathazari Model thana,
+          Chattogram, Chattogram
+        </div>
+      </div>
+
+      <div class="info-second">
+        D/15-1, Road-36, Block-D, Section-10, Mirpur, Dhaka-1216<br />
+        <strong>Bill Number:</strong> 004687255-0202
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>SL No.</th>
+              <th>Products</th>
+              <th>Quantity</th>
+              <th>MRP</th>
+              <th>Discount</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Esomik M 20</td>
+              <td>9 Strips (90 x Tablet)</td>
+              <td>900</td>
+              <td>126.27</td>
+              <td>773.73</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Linax Plus 2.5/850</td>
+              <td>6 Strips (60 x Tablet)</td>
+              <td>600</td>
+              <td>72</td>
+              <td>528</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Bizoran 5/20</td>
+              <td>2 Strips (30 x Tablet)</td>
+              <td>360</td>
+              <td>47.96</td>
+              <td>312.04</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bioscin 2.5</td>
+              <td>3 Strips (30 x Tablet)</td>
+              <td>210</td>
+              <td>21</td>
+              <td>189</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Omidon 10</td>
+              <td>2 Strips (30 x Tablet)</td>
+              <td>105</td>
+              <td>12.58</td>
+              <td>92.42</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Calvinax-D</td>
+              <td>1 Box (30 x Tablet)</td>
+              <td>240</td>
+              <td>24</td>
+              <td>216</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Consezon 80</td>
+              <td>4 Strips (40 x Tablet)</td>
+              <td>320</td>
+              <td>38.4</td>
+              <td>281.6</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Rosuva 5</td>
+              <td>3 Strips (30 x Tablet)</td>
+              <td>300.9</td>
+              <td>45.3</td>
+              <td>255.6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="summary">
+        <div class="app-links">
+          <div>
+            <img src="./assets/imgs/sasthokotha.jpeg" alt="Google Play" />
+            <h5>Google Play</h5>
+          </div>
+          <div>
+            <img src="./assets/imgs/sasthokotha.jpeg" alt="App Store" />
+            <h5>App Store</h5>
+          </div>
+        </div>
+
+        <div class="totals">
+          <div><span>Subtotal:</span> 3035.9</div>
+          <div><span>Discount applied:</span> -387.51</div>
+          <div><span>Rounding Off:</span> -0.39</div>
+          <div>
+            <span>Estimated Delivery (1-5 Days Outside Dhaka):</span> 20
+          </div>
+          <div><span>Amount Payable:</span> 2648</div>
+        </div>
+      </div>
+      <div class="footer">
+        This service falls under services code S0099.60 of VAT and the VAT has
+        been calculated according to explanation letter No. 02/Mushak/2019
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .invoice-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    width: 120px;
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+  .order-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    line-height: 24px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 80px;
+  }
+
+  .info div {
+    font-size: 16px;
+    line-height: 24px;
+    flex: 1;
+  }
+
+  .info div a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .info div a:hover {
+    text-decoration: underline;
+  }
+
+  .info-second {
+    margin: 20px 0;
+    line-height: 24px;
+  }
+
+  .table-container {
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  table thead {
+    background-color: #f1f1f1;
+  }
+  table th,
+  table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  .totals {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .totals div {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 5px;
+  }
+  .totals div span {
+    font-weight: bold;
+  }
+
+  .app-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .app-links img {
+    width: 100px;
+    height: auto;
+  }
+
+  .app-links h5 {
+    margin: 0;
+  }
+  .footer {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 560px) {
+    .header img {
+      width: 80px;
+    }
+    .order-info {
+      flex-wrap: wrap;
+    }
+    .info {
+      gap: 20px;
+    }
+    .summary {
+      flex-direction: column;
+    }
+  }
+</style>
