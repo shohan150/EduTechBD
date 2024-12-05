@@ -59,15 +59,21 @@
       margin: 0 10px;
     }
     .filter-section {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       gap: 20px;
       justify-content: space-between;
       align-items: end;
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 920px) {
       .filter-section {
-         flex-wrap: wrap;
+         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media screen and (max-width: 420px) {
+      .filter-section {
+         grid-template-columns: repeat(1, 1fr);
       }
     }
     .filter-section div{
@@ -285,10 +291,17 @@
                         <option value="Expense">Expense</option>
                       </select>
                     </div>
+                    <div>
+                      <label for="ledgerType">Select User</label>
+                      <select name="ledgerType" id="ledgerType">
+                        <option value="Abdur Rahman">Abdur Rahman</option>
+                        <option value="Shahin Ali">Shahin Ali</option>
+                      </select>
+                    </div>
                     <button>Search</button>
                   </div>
                   <!-- Title -->
-                  <h3>Cash Book</h3>
+                  <h3>Category Wise Ledger Summary</h3>
 
                   <!-- Income Section -->
                   <div class="section">
@@ -300,51 +313,12 @@
                      </thead>
                       <tbody>
                         <tr>
-                           <td colspan="3">Fixed Asset</td>
-                        </tr>
-                        <tr>
                           <td>Computer</td>
                           <td>0</td>
                           <td>520</td>
                         </tr>
                         <tr>
                           <td>Admission Fees</td>
-                          <td>0</td>
-                          <td>520</td>
-                        </tr>
-                        <tr class="total-row">
-                          <td>Total</td>
-                          <td>0</td>
-                          <td>1040</td>
-                        </tr>
-                        <tr>
-                           <td colspan="3">Cash and Cash Equivalence</td>
-                        </tr>
-                        <tr>
-                          <td>Lunch</td>
-                          <td>0</td>
-                          <td>520</td>
-                        </tr>
-                        <tr>
-                          <td>Snacks</td>
-                          <td>0</td>
-                          <td>520</td>
-                        </tr>
-                        <tr class="total-row">
-                          <td>Total</td>
-                          <td>0</td>
-                          <td>1040</td>
-                        </tr>
-                        <tr>
-                           <td colspan="3">Regular Income</td>
-                        </tr>
-                        <tr>
-                          <td>Profit</td>
-                          <td>0</td>
-                          <td>520</td>
-                        </tr>
-                        <tr>
-                          <td>Loss</td>
                           <td>0</td>
                           <td>520</td>
                         </tr>
