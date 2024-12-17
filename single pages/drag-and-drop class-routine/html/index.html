@@ -175,6 +175,14 @@
                       max="10"
                       required
                     />
+                    <label for="num-periods">Break Period:</label>
+                    <input
+                      type="number"
+                      id="break-period"
+                      name="break-period"
+                      min="2"
+                      max="9"
+                    />
                     <button type="submit">Create Table</button>
                   </form>
                 </div>
@@ -221,7 +229,6 @@
                 <div id="schedule-container">
                   <div
                     id="schedule"
-                    class="collapsed"
                     style="grid-template-columns: 100px repeat(7, 1fr)"
                   >
                     <div class="header"></div>
@@ -241,16 +248,13 @@
                       <p>Period 4</p>
                       <p class="time">(8:00 AM - 9:00 AM)</p>
                     </div>
+                    <div class="header break">Break</div>
                     <div class="header">
                       <p>Period 5</p>
                       <p class="time">(8:00 AM - 9:00 AM)</p>
                     </div>
                     <div class="header">
                       <p>Period 6</p>
-                      <p class="time">(8:00 AM - 9:00 AM)</p>
-                    </div>
-                    <div class="header">
-                      <p>Period 7</p>
                       <p class="time">(8:00 AM - 9:00 AM)</p>
                     </div>
                     <div class="day-label">
@@ -269,13 +273,11 @@
                     <div class="period" id="sat-p4">
                       <button class="delete">X</button>
                     </div>
+                    <div class="period break">Break</div>
                     <div class="period" id="sat-p5">
                       <button class="delete">X</button>
                     </div>
                     <div class="period" id="sat-p6">
-                      <button class="delete">X</button>
-                    </div>
-                    <div class="period" id="sat-p7">
                       <button class="delete">X</button>
                     </div>
                     <div class="day-label">Sunday</div>
@@ -291,13 +293,11 @@
                     <div class="period" id="sun-p4">
                       <button class="delete">X</button>
                     </div>
+                    <div class="period break">Break</div>
                     <div class="period" id="sun-p5">
                       <button class="delete">X</button>
                     </div>
                     <div class="period" id="sun-p6">
-                      <button class="delete">X</button>
-                    </div>
-                    <div class="period" id="sun-p7">
                       <button class="delete">X</button>
                     </div>
                     <div class="day-label">Monday</div>
@@ -313,13 +313,11 @@
                     <div class="period" id="mon-p4">
                       <button class="delete">X</button>
                     </div>
+                    <div class="period break">Break</div>
                     <div class="period" id="mon-p5">
                       <button class="delete">X</button>
                     </div>
                     <div class="period" id="mon-p6">
-                      <button class="delete">X</button>
-                    </div>
-                    <div class="period" id="mon-p7">
                       <button class="delete">X</button>
                     </div>
                     <div class="day-label">Tuesday</div>
@@ -335,13 +333,11 @@
                     <div class="period" id="tue-p4">
                       <button class="delete">X</button>
                     </div>
+                    <div class="period break">Break</div>
                     <div class="period" id="tue-p5">
                       <button class="delete">X</button>
                     </div>
                     <div class="period" id="tue-p6">
-                      <button class="delete">X</button>
-                    </div>
-                    <div class="period" id="tue-p7">
                       <button class="delete">X</button>
                     </div>
                     <div class="day-label">Wednesday</div>
@@ -357,13 +353,11 @@
                     <div class="period" id="wed-p4">
                       <button class="delete">X</button>
                     </div>
+                    <div class="period break">Break</div>
                     <div class="period" id="wed-p5">
                       <button class="delete">X</button>
                     </div>
                     <div class="period" id="wed-p6">
-                      <button class="delete">X</button>
-                    </div>
-                    <div class="period" id="wed-p7">
                       <button class="delete">X</button>
                     </div>
                     <div class="day-label">Thursday</div>
@@ -379,13 +373,11 @@
                     <div class="period" id="thu-p4">
                       <button class="delete">X</button>
                     </div>
+                    <div class="period break">Break</div>
                     <div class="period" id="thu-p5">
                       <button class="delete">X</button>
                     </div>
                     <div class="period" id="thu-p6">
-                      <button class="delete">X</button>
-                    </div>
-                    <div class="period" id="thu-p7">
                       <button class="delete">X</button>
                     </div>
                   </div>

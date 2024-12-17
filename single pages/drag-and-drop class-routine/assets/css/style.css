@@ -5,6 +5,29 @@ body {
   color: #333;
 }
 
+#form-container {
+  margin-bottom: 20px;
+}
+
+#period-form input {
+  width: 120px;
+  padding: 5px;
+  border-radius: 6px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+#period-form button,
+#save-button,
+#print-button,
+#table-collapse-button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
 #subjects {
   padding: 5px 0;
   display: flex;
@@ -16,7 +39,7 @@ body {
 }
 
 .subject {
-  min-width: 85px;
+  min-width: 80px;
   padding: 5px 10px;
   background-color: #007bff;
   border: 1px solid #0056b3;
@@ -54,8 +77,15 @@ body {
   transform: scale(1.04);
 }
 
-#form-container {
-  margin-bottom: 20px;
+.break {
+  background-color: #333 !important;
+  border: #333 !important;
+  color: white !important;
+  cursor: not-allowed;
+}
+
+.break p {
+  margin-bottom: 0px;
 }
 
 #schedule-container {
@@ -83,7 +113,7 @@ body {
   color: white;
   border: 1px solid #0056b3;
   border-radius: 5px;
-  min-width: 100px;
+  min-width: 90px;
   min-height: 45px;
   padding: 2px;
   position: relative;
@@ -130,7 +160,7 @@ body {
   position: relative;
   border-radius: 5px;
   transition: background-color 0.2s, border-color 0.2s;
-  min-width: 100px;
+  min-width: 90px;
 }
 
 .period:hover {
@@ -170,25 +200,6 @@ body {
   gap: 10px;
 }
 
-#period-form input {
-  width: 150px;
-  padding: 5px;
-  border-radius: 6px;
-  margin-right: 10px;
-  height: 40px;
-}
-
-#period-form button,
-#save-button,
-#print-button,
-#table-collapse-button {
-  padding: 10px 25px;
-  border-radius: 6px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-}
-
 .table-collapse {
   width: 100%;
   padding: 10px;
@@ -209,7 +220,7 @@ body {
   .period,
   .header,
   .day-label {
-    min-width: 100px;
+    min-width: 90px;
   }
 }
 
@@ -217,5 +228,22 @@ body {
   @page {
     size: landscape;
     margin: 20px;
+  }
+
+  body {
+    visibility: hidden;
+  }
+
+  #schedule-container {
+    visibility: visible;
+  }
+
+  #schedule {
+    gap: 5px;
+  }
+
+  i.bx-copy,
+  i.bx-paste {
+    display: none;
   }
 }

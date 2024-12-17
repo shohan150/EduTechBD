@@ -10,28 +10,42 @@ document.addEventListener("DOMContentLoaded", () => {
   //take the number of periods or columns and create new routine.
   periodForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const numPeriods = document.getElementById("num-periods").value;
-    createSchedule(numPeriods);
+
+    const formData = new FormData(e.target);
+    const numPeriods = formData.get('num-periods');
+    const breakPeriod = formData.get('break-period');
+    createSchedule(numPeriods, breakPeriod);
   });
 
   saveButton.addEventListener("click", saveRoutine);
 
-  function createSchedule(numPeriods) {
+
+  function createSchedule(numPeriods, breakPeriod) {
     scheduleContainer.innerHTML = ""; // Clear existing schedule
 
     const days = [ "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
-    scheduleContainer.style.gridTemplateColumns = `100px repeat(${numPeriods}, 1fr)`;
+
+    const columnCount = breakPeriod ? parseInt(numPeriods) + 1 : numPeriods;
+    scheduleContainer.style.gridTemplateColumns = `100px repeat(${columnCount}, 1fr)`;
 
     const emptyHeader = document.createElement("div");
     emptyHeader.classList.add("header");
     scheduleContainer.appendChild(emptyHeader); // Empty cell at the top-left
 
     //period sequence at the top
-    for (let i = 1; i <= numPeriods; i++) {
+    for (let i = 1; i <= numPeriods; i++) {      
+      if(breakPeriod && i == breakPeriod){
+        const breakHeader = document.createElement("div");
+        breakHeader.classList.add("header");
+        breakHeader.classList.add("break");
+        breakHeader.innerText = "Break";
+        scheduleContainer.appendChild(breakHeader);
+      }
+
       const header = document.createElement("div");
+      header.classList.add("header");
       const firstParagraph = document.createElement("p");
       const secondParagraph = document.createElement("p");
-      header.classList.add("header");
       firstParagraph.innerText = `Period ${i}`;
       secondParagraph.classList.add("time");
       secondParagraph.innerText = "(8:00 AM - 9:00 AM)";
@@ -52,6 +66,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       //then for each day create empty period field. then add the period field to scheduleContainer
       for (let i = 1; i <= numPeriods; i++) {
+
+        if(breakPeriod && i == breakPeriod){  
+          const breakPeriod = document.createElement("div");
+          breakPeriod.classList.add("period");
+          breakPeriod.classList.add("break");
+          const breakContent = document.createElement("p");
+          breakContent.innerText = "Break";
+          breakPeriod.appendChild(breakContent);
+          scheduleContainer.appendChild(breakPeriod);
+        }
+
         const period = document.createElement("div");
         period.classList.add("period");
         //dynamic id for each period field
@@ -70,27 +95,28 @@ document.addEventListener("DOMContentLoaded", () => {
         //finally add each period field to the scheduleContainer
         scheduleContainer.appendChild(period);
       }
-      
-      const copyIcons = document.querySelectorAll ('.day-label i.bx-copy');
 
-      const singleDayPeriods = document.querySelectorAll(`div.period:nth-last-of-type(-n+${numPeriods})`);
+      const singleDayPeriods = document.querySelectorAll(`div.period:nth-last-of-type(-n+${columnCount})`);
 
-      copyPasteFeature(Number(numPeriods), index, copyIcons, singleDayPeriods);
+      copyPasteFeature(Number(columnCount), index, singleDayPeriods);
 
     });
   }
 
-  function copyPasteFeature (numPeriods, index, copyIcons, singleDayPeriods) {
+  function copyPasteFeature (columnCount, index, singleDayPeriods) {
+    const copyIcons = document.querySelectorAll ('.day-label i.bx-copy');
     const copyIcon = copyIcons[index];
     copyIcon.addEventListener('click', () => {
       const pasteIcons = document.querySelectorAll ('.day-label i.bx-paste');
       pasteIcons.forEach((pasteIcon, index) =>
         pasteIcon.addEventListener('click', () => {
         const allPeriods =  document.querySelectorAll(`div.period`);
-        for (let i = 0; i < numPeriods; i++) {
-         allPeriods[numPeriods*index + i].innerHTML = singleDayPeriods[i].innerHTML;
+        for (let i = 0; i < columnCount; i++) {
 
-         allPeriods[numPeriods*index + i].querySelector(".delete").addEventListener("click", deleteContent);
+         allPeriods[columnCount*index + i].innerHTML = singleDayPeriods[i].innerHTML;
+
+         // break will not have a delete button. so optional chaining.
+         allPeriods[columnCount*index + i].querySelector(".delete")?.addEventListener("click", deleteContent);
         }
       }))
       
