@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const periodForm = document.getElementById("period-form");
   const scheduleContainer = document.getElementById("schedule");
   const saveButton = document.getElementById("save-button");
+  const tableCollapseButton = document.getElementById("table-collapse-button");
 
   //take the number of periods or columns and create new routine.
   periodForm.addEventListener("submit", (e) => {
@@ -28,8 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
     //period sequence at the top
     for (let i = 1; i <= numPeriods; i++) {
       const header = document.createElement("div");
+      const firstParagraph = document.createElement("p");
+      const secondParagraph = document.createElement("p");
       header.classList.add("header");
-      header.innerText = `Period ${i}`;
+      firstParagraph.innerText = `Period ${i}`;
+      secondParagraph.classList.add("time");
+      secondParagraph.innerText = "(8:00 AM - 9:00 AM)";
+      header.appendChild(firstParagraph);
+      header.appendChild(secondParagraph);
       scheduleContainer.appendChild(header);
     }
 
@@ -184,4 +191,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     console.log(JSON.stringify(routineData, null, 2));
   }
+
+
+  tableCollapseButton.addEventListener("click", () => {
+    scheduleContainer.classList.toggle("collapsed");
+  });
 });
