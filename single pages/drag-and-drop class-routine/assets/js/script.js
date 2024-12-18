@@ -220,6 +220,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   tableCollapseButton.addEventListener("click", () => {
-    scheduleContainer.classList.toggle("collapsed");
+    // scheduleContainer.classList.toggle("collapsed");
+    if(scheduleContainer.classList.contains("collapsed")){
+      scheduleContainer.classList.remove("collapsed");
+      tableCollapseButton.innerText = "Expand Routine";
+    }else{
+      scheduleContainer.classList.add("collapsed");
+      tableCollapseButton.innerText = "Collapse Routine";
+    }
   });
 });

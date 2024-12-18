@@ -77,10 +77,10 @@ body {
   transform: scale(1.04);
 }
 
-.break {
-  background-color: #333 !important;
-  border: #333 !important;
-  color: white !important;
+#schedule-container .break {
+  background-color: #333;
+  border: #333;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -212,6 +212,45 @@ body {
   overflow: auto;
 }
 
+.school-info {
+  display: none;
+  /* on print display:flex */
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+  color: #666;
+  margin: 10px 20px;
+}
+
+.school-info img {
+  width: 65px;
+  color: #666 !important;
+}
+
+.school-info h3 {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.school-info p {
+  margin-bottom: 0;
+}
+
+.school-info .class-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-info .class-info p {
+  border-right: 1px solid #666;
+  padding: 0 10px;
+}
+
+.school-info .class-info p:last-child {
+  border-right: none;
+}
+
 @media (max-width: 768px) {
   #schedule {
     grid-template-columns: 100px repeat(auto-fit, minmax(100px, 1fr));
@@ -232,18 +271,50 @@ body {
 
   body {
     visibility: hidden;
+    padding: 0;
+    margin: 0;
   }
 
   #schedule-container {
     visibility: visible;
+    background-color: #fff;
+  }
+
+  #schedule {
+    box-shadow: none;
   }
 
   #schedule {
     gap: 5px;
   }
 
+  .header,
+  .day-label,
+  #schedule-container .break {
+    background-color: #666;
+    border-color: #666 !important;
+  }
+
+  .period {
+    border: 1px solid #666;
+  }
+
+  #schedule-container .subject {
+    background-color: inherit;
+    color: black;
+    border: none;
+  }
+
+  .subject p:first-child {
+    border-bottom: 1px solid #666;
+  }
+
   i.bx-copy,
   i.bx-paste {
     display: none;
+  }
+
+  .school-info {
+    display: flex;
   }
 }
