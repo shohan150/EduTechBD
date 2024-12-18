@@ -223,10 +223,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // scheduleContainer.classList.toggle("collapsed");
     if(scheduleContainer.classList.contains("collapsed")){
       scheduleContainer.classList.remove("collapsed");
-      tableCollapseButton.innerText = "Expand Routine";
+      tableCollapseButton.innerText = "Collapse Routine";
     }else{
       scheduleContainer.classList.add("collapsed");
-      tableCollapseButton.innerText = "Collapse Routine";
+      tableCollapseButton.innerText = "Expand Routine";
     }
   });
 });
