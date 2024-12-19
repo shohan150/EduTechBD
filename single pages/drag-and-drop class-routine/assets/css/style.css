@@ -202,7 +202,7 @@ body {
 
 .table-collapse {
   width: 100%;
-  padding: 10px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: end;
 }
@@ -219,7 +219,7 @@ body {
   gap: 20px;
   text-align: center;
   color: #666;
-  margin: 10px 20px;
+  margin: 5px 20px;
 }
 
 .school-info img {
@@ -288,6 +288,10 @@ body {
     gap: 5px;
   }
 
+  .collapsed {
+    max-height: none;
+  }
+
   .header,
   .day-label,
   #schedule-container .break {
@@ -317,4 +321,18 @@ body {
   .school-info {
     display: flex;
   }
+}
+
+#schedule::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+#schedule::-webkit-scrollbar-track {
+  background-color: #ccc;
+}
+
+#schedule::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 20px;
 }

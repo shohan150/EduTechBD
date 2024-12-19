@@ -41,7 +41,24 @@
   border-radius: 3px;
 }
 
-/* .grid-container::-webkit-scrollbar {
+.submit {
+  display: flex;
+  justify-content: end;
+}
+
+.submit button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.submit button:hover {
+  background-color: #007bffe1;
+}
+
+.grid-container::-webkit-scrollbar {
   height: 9px;
 }
 
@@ -52,4 +69,4 @@
 .grid-container::-webkit-scrollbar-thumb {
   background-color: #696cff;
   border-radius: 20px;
-} */
+}
