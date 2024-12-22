@@ -20,11 +20,15 @@ for (let i = 1; i < 12; i++) {
 }
 
 // Create grid items for each class
-classes.forEach(className => {
+classes.forEach((className, index) => {
    const singleClass = document.createElement('div');
    singleClass.className = 'grid-item single-class';
    singleClass.textContent = `Class ${className}`;
    container.appendChild(singleClass);
+
+   if(index % 2 === 0){
+      singleClass.style.backgroundColor = '#f1f1f1';
+   }
 
     for (let i = 1; i < 12; i++) {
         const gridItem = document.createElement('div');
@@ -81,6 +85,10 @@ classes.forEach(className => {
                gridItem.appendChild(formField);
          });
 
+      if(index % 2 === 0){
+         gridItem.style.backgroundColor = '#f1f1f1';
+      }
+      
       container.appendChild(gridItem);
     }
 })
