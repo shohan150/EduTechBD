@@ -20,16 +20,35 @@ searchBox.addEventListener('input', () => {
     employeeSearched.length = 0;
     printReport(employeeReports);
   }
+
+  function doesNameStartWith(fullName, searchString) {
+    const words = fullName.split(' ');
+    for (let word of words) {
+      if (word.toLowerCase().startsWith(searchString.toLowerCase())) {
+        return true; 
+      }
+    }
+    return false; 
+  }
+
   delay(() => {
     employeeSearched.length = 0;
     const searchValue = searchBox.value.toLowerCase();
     employeeReports.forEach(employee => {
-      if (employee.name.toLowerCase().includes(searchValue) || employee.id.toLowerCase().includes(searchValue)) {
+      if (doesNameStartWith(employee.name, searchValue) || employee.id.toLowerCase().includes(searchValue)) {
         employeeSearched.push(employee);
       }
     });
     container.innerHTML = '';
-    printReport(employeeSearched);
+    if(employeeSearched.length > 0){
+      printReport(employeeSearched);
+    } else {
+      const notFound = document.createElement('h6');
+      notFound.innerHTML = 'No employee found';
+      notFound.style.textAlign = "center";
+      notFound.style.margin = "20px 0";
+      container.appendChild(notFound);
+    }
   }, 400);
 });
 
