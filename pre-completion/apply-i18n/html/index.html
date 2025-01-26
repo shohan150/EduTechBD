@@ -63,7 +63,9 @@
         >
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
-              <span class="app-brand-text demo menu-text fw-bold ms-2"
+              <span
+                class="app-brand-text demo menu-text fw-bold ms-2"
+                data-i18n="school"
                 >School</span
               >
             </a>
@@ -83,7 +85,7 @@
 
             <li class="menu-item active">
               <a href="index.html" class="menu-link">
-                <div data-i18n="Vertical Form">Dashboard</div>
+                <div data-i18n="verticalForm">Vertical Form</div>
               </a>
             </li>
           </ul>
@@ -131,7 +133,17 @@
                 <!-- Place this tag where you want the button to render. -->
 
                 <!-- User -->
-                <li class="nav-item">
+                <li
+                  class="nav-item"
+                  style="display: flex; align-items: end; gap: 10px"
+                >
+                  <div class="language-toggle">
+                    <span class="language-option active">EN</span>
+                    <div class="toggle-slider" id="languageToggle">
+                      <div class="toggle-circle"></div>
+                    </div>
+                    <span class="language-option">BN</span>
+                  </div>
                   <a
                     class="nav-link"
                     href="javascript:void(0);"
@@ -158,7 +170,7 @@
             <!-- Content -->
 
             <div class="container-fluid flex-grow-1 container-p-y">
-              <h4 class="py-3 mb-4">
+              <h4 class="py-3 mb-4" data-i18n="breadcrumb">
                 <span class="text-muted fw-light">Employee/</span> Progress
                 Tracker
               </h4>
@@ -167,9 +179,6 @@
               <div class="row">
                 <!-- content here -->
                 <div id="app">
-                  <button id="languageToggle" class="btn btn-primary mb-2">
-                    Switch Language
-                  </button>
                   <h1 data-i18n="title"></h1>
                   <p data-i18n="content"></p>
                   <footer data-i18n="footer"></footer>
@@ -227,14 +236,62 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/i18next@22.4.9/dist/umd/i18next.min.js"></script>
+    <script src="../assets/js/app.js"></script>
     <style>
       #app {
         max-width: 600px;
         margin: auto;
         text-align: center;
       }
+      .language-toggle {
+        display: flex;
+        align-items: center;
+        background-color: #e9ecef;
+        border-radius: 50px;
+        padding: 5px;
+        width: 120px; /* Width of the toggle button */
+        position: relative;
+      }
+
+      .language-option {
+        font-size: 12px;
+        font-weight: bold;
+        color: #6c757d;
+        flex: 1;
+        text-align: center;
+        pointer-events: none; /* Prevent clicking on the text */
+      }
+
+      .language-option.active {
+        color: #566a7f66;
+      }
+
+      .toggle-slider {
+        position: relative;
+        background-color: #007bff;
+        height: 30px;
+        width: 60px; /* Half the width of the toggle */
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .toggle-circle {
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+        transition: transform 0.3s ease;
+      }
+
+      .toggle-slider.active .toggle-circle {
+        transform: translateX(30px); /* Move the circle to the right */
+      }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/i18next@22.4.9/dist/umd/i18next.min.js"></script>
-    <script src="../assets/js/app.js"></script>
   </body>
 </html>
