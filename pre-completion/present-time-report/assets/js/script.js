@@ -1,6 +1,6 @@
 const employeeReports = [
    { name: "Jalil Raihan", id: "001", report: [8.2, 0.6, 2, 2, 2.8] },
-   { name: "Maya Khan", id: "002", report: [3.5, 1.58, 3.12, 4.79, 1.43] },
+   { name: "Maya Khan", id: "002", report: [1.5, 1.58, 1.12, 0.79, 1.43] },
    { name: "Rahim Ali", id: "003", report: [5.2, 1.5, 2, 1.67, 0.35] },
    { name: "Sara Jahan", id: "004", report: [2.1, .32, 4.3, 1.2, 3] },
    { name: "Omar Faruk", id: "005", report: [4.1, 1.84, 2.5, 2.7, 1.7] }
@@ -67,6 +67,7 @@ function printReport(employeeArray){
  
     let totalHours = 0;
     let usedWidthPercentage = 0;
+    let overtime = 0;
     const dutyTime = 10;
  
     let processedTimeline = [];
@@ -77,6 +78,7 @@ function printReport(employeeArray){
          const toBeAdded = dutyTime - totalHours;
          totalHours += toBeAdded;
          processedTimeline.push(toBeAdded);
+         overtime += hours - toBeAdded;
         } else{
          // ususal case
          if(totalHours < dutyTime){
@@ -114,22 +116,22 @@ function printReport(employeeArray){
      upperSegment.className = 'progress-segment';
  
      segment.className = (index % 2 === 0 ? 'present' : 'absent');
- 
+     
      // make the final entry take the whole place
-     if(index === processedTimeline.length -1){
+     if(index === (processedTimeline.length -1)){
        upperSegment.style.width = `${100 - usedWidthPercentage}%`;
      }else{
        upperSegment.style.width = `${ratio}%`;
        usedWidthPercentage += ratio;
      }
  
-     // make the unfinished entry gray
-     upperSegment.style.width = `${ratio}%`;
-     usedWidthPercentage += ratio;
- 
      const timeText = getTimeText(hours);
      if(ratio>=5) {segment.innerText = timeText;} else{
        segment.innerText = '!';
+     }
+
+     if(index === (processedTimeline.length -1)){
+      segment.innerText = getTimeText(dutyTime - totalHours + hours);
      }
  
      upperSegment.setAttribute('data-time', timeText);
@@ -137,6 +139,14 @@ function printReport(employeeArray){
      progressBar.appendChild(upperSegment);
     });
  
+    if(overtime > 0){
+      const overtimeDiv = document.createElement('div');
+      overtimeDiv.className = 'overtime';
+      overtimeDiv.textContent = "!";
+     overtimeDiv.setAttribute('data-time', `Overtime : ${getTimeText(overtime)}`);
+      progressBar.appendChild(overtimeDiv);
+    }
+
     employeeDiv.appendChild(progressBar);
     container.appendChild(employeeDiv);
  });

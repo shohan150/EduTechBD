@@ -26,6 +26,7 @@
 .employee-container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .employee-container h4 {
@@ -95,6 +96,38 @@
 .progress-segment:hover:before {
   opacity: 1;
   transform: scale(1) translateX(-50%) translateY(-20%);
+}
+
+.overtime {
+  background-color: yellow;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: -8px;
+  width: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.overtime:before {
+  content: attr(data-time);
+  padding: 1px 6px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.4) translateY(80%);
+  opacity: 0;
+  background-color: #d9e61f;
+  border: 1px solid #5e7185;
+  border-radius: 4px;
+  transition: all 0.5s;
+  color: #5e7185;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.overtime:hover:before {
+  opacity: 1;
+  transform: scale(1) translateX(-85%) translateY(-20%);
 }
 
 .present {
